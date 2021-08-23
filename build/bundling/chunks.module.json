@@ -1,0 +1,75 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "702ad0c095f8fe3dc1fc",
+  "publicPath": "/static/",
+  "outputPath": "/Users/macbook/Documents/development/aderonke/build/static",
+  "assetsByChunkName": {
+    "aderonke": "aderonke.module.js",
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "aderonke.module.js",
+      "size": 6608058,
+      "chunks": [
+        "aderonke"
+      ],
+      "chunkNames": [
+        "aderonke"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 47053,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "namedChunkGroups": {
+    "aderonke": {
+      "chunks": [
+        "aderonke"
+      ],
+      "assets": [
+        "aderonke.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "aderonke",
+      "files": [
+        "aderonke.module.js"
+      ]
+    },
+    {
+      "id": "list",
+      "files": [
+        "list.module.js"
+      ]
+    }
+  ]
+}
