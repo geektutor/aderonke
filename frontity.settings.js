@@ -4,7 +4,7 @@ const settings = {
     "frontity": {
       "url": "https://api.geektutor.xyz",
       "title": "Geektutor's Website",
-      "description": "WordPress installation for Frontity development"
+      "description": "The WordPress Babalawo"
     }
   },
   "packages": [
@@ -18,19 +18,19 @@ const settings = {
               "/"
             ],
             [
-              "Nature",
+              "Bio",
               "/category/nature/"
             ],
             [
-              "Travel",
+              "Showcase",
               "/category/travel/"
             ],
             [
-              "Japan",
+              "Blog",
               "/tag/japan/"
             ],
             [
-              "About Us",
+              "Contact",
               "/about-us/"
             ]
           ],
