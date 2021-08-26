@@ -9,10 +9,20 @@ const Root = ({ state }) => {
     <>
     <Global 
       styles={css`
+        :root {
+          --role-font-size: 22.5px;
+          --role-font-size-grow: 25.5px;
+        }
         body{
           margin: 0px;
           padding: body
           box-sizing: border-box;
+        }
+        @media (min-width: 1000px){
+          :root {
+          --role-font-size: 30.5px;
+          --role-font-size-grow: 35.5px;
+        }
         }
       `
       }
