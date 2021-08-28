@@ -3,6 +3,7 @@ import { connect, Global, css } from "frontity"
 import Link from "@frontity/components/link"
 
 import Header from "./Header/Header"
+import Bio from "./Bio/Bio"
 
 const Root = ({ state }) => {
   return (
@@ -28,6 +29,7 @@ const Root = ({ state }) => {
       }
     />
       <Header />
+      <Bio />
 
       {/* <h1>Hello Geektutor</h1>
       <p>Current URL: {state.router.link}</p>
