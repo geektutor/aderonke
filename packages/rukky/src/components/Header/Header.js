@@ -29,8 +29,8 @@ const Header = () => {
                         <div class="left-side">
                             <div class="roles">
                                 <div class="roles-container">
-                                    <h3 class="role1">software engineer</h3>
-                                    <h3 class="role2">wordpress specialist</h3>
+                                    <h3 class="role1">wordpress babalawo</h3>
+                                    <h3 class="role2">project manager</h3>
                                     <h3 class="role3">product manager</h3>
                                     <h3 class="role4">community advocate</h3>
                                 </div>
