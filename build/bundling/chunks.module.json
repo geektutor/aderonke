@@ -1,19 +1,30 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "08a4e1e95db91fe1a8bc",
+  "hash": "51406aef24f39620874c",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\build\\static",
   "assetsByChunkName": {
     "aderonke": [
       "aderonke.module.js",
-      "aderonke.bed13969645c200d04eb.hot-update.js"
+      "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "aderonke.bed13969645c200d04eb.hot-update.js",
-      "size": 7957,
+      "name": "08a4e1e95db91fe1a8bc.hot-update.json",
+      "size": 50,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "aderonke.08a4e1e95db91fe1a8bc.hot-update.js",
+      "size": 8495,
       "chunks": [
         "aderonke"
       ],
@@ -28,7 +39,7 @@
     },
     {
       "name": "aderonke.module.js",
-      "size": 6437353,
+      "size": 6437345,
       "chunks": [
         "aderonke"
       ],
@@ -36,17 +47,6 @@
         "aderonke"
       ],
       "info": {},
-      "emitted": false
-    },
-    {
-      "name": "bed13969645c200d04eb.hot-update.json",
-      "size": 50,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
       "emitted": false
     },
     {
@@ -77,7 +77,7 @@
       "info": {
         "sourceFilename": "packages/rukky/src/Assets/img/showcase-img.jpg"
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -88,7 +88,7 @@
       ],
       "assets": [
         "aderonke.module.js",
-        "aderonke.bed13969645c200d04eb.hot-update.js"
+        "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -100,7 +100,7 @@
       "id": "aderonke",
       "files": [
         "aderonke.module.js",
-        "aderonke.bed13969645c200d04eb.hot-update.js"
+        "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
       ]
     }
   ]
