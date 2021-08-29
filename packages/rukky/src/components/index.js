@@ -4,6 +4,8 @@ import Link from "@frontity/components/link"
 
 import Header from "./Header/Header"
 import Bio from "./Bio/Bio"
+import Showcase from "./Showcase/Showcase"
+
 
 const Root = ({ state }) => {
   return (
@@ -30,6 +32,7 @@ const Root = ({ state }) => {
     />
       <Header />
       <Bio />
+      <Showcase />
 
       {/* <h1>Hello Geektutor</h1>
       <p>Current URL: {state.router.link}</p>
