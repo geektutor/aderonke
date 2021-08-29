@@ -1,10 +1,6 @@
 import React from 'react'
 import { connect, styled } from 'frontity'
 
-let roleFontSizesm =  22.5 + "px";
-let roleFontSizels =  30.5 + "px";
-let roleFontSizeGrowsm =  25.5 + "px";
-let roleFontSizeGrowls =  35.5 + "px";
 
 const HeaderContainer = styled.div`
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
@@ -210,7 +206,7 @@ body {
     opacity: 0.4;
   }
   100% {
-    font-size: var(--role-font-size);
+    font-size: var(--role-font-size-grow);
     opacity: 1;
   }
 }

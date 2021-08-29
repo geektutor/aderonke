@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "ec2eb2b23a284d7cd77a",
+  "hash": "51406aef24f39620874c",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\build\\static",
   "assetsByChunkName": {
     "aderonke": [
       "aderonke.module.js",
-      "aderonke.1a9551c6013f64323c58.hot-update.js"
+      "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "1a9551c6013f64323c58.hot-update.json",
+      "name": "08a4e1e95db91fe1a8bc.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "aderonke.1a9551c6013f64323c58.hot-update.js",
-      "size": 12980,
+      "name": "aderonke.08a4e1e95db91fe1a8bc.hot-update.js",
+      "size": 8495,
       "chunks": [
         "aderonke"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "aderonke.module.js",
-      "size": 6411185,
+      "size": 6437345,
       "chunks": [
         "aderonke"
       ],
@@ -68,6 +68,16 @@
         "sourceFilename": "packages/rukky/src/Assets/img/astericbullet.svg"
       },
       "emitted": false
+    },
+    {
+      "name": "images/showcase-img.jpg",
+      "size": 217593,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/rukky/src/Assets/img/showcase-img.jpg"
+      },
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -78,7 +88,7 @@
       ],
       "assets": [
         "aderonke.module.js",
-        "aderonke.1a9551c6013f64323c58.hot-update.js"
+        "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -90,7 +100,7 @@
       "id": "aderonke",
       "files": [
         "aderonke.module.js",
-        "aderonke.1a9551c6013f64323c58.hot-update.js"
+        "aderonke.08a4e1e95db91fe1a8bc.hot-update.js"
       ]
     }
   ]
