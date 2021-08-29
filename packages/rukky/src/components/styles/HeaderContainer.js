@@ -229,7 +229,7 @@ body {
     opacity: 0.4;
   }
   100% {
-    font-size: var(--role-font-size);
+    font-size: var(--role-font-size-grow);
     opacity: 1;
   }
 }
