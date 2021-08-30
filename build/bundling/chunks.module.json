@@ -1,30 +1,19 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "ef1692426c3dd6902183",
+  "hash": "65daba18487a76e18237",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\build\\static",
   "assetsByChunkName": {
     "aderonke": [
       "aderonke.module.js",
-      "aderonke.51406aef24f39620874c.hot-update.js"
+      "aderonke.d5b4124a3049c60cc1db.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "51406aef24f39620874c.hot-update.json",
-      "size": 50,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "aderonke.51406aef24f39620874c.hot-update.js",
-      "size": 35643,
+      "name": "aderonke.d5b4124a3049c60cc1db.hot-update.js",
+      "size": 17456,
       "chunks": [
         "aderonke"
       ],
@@ -39,7 +28,7 @@
     },
     {
       "name": "aderonke.module.js",
-      "size": 6437358,
+      "size": 6499529,
       "chunks": [
         "aderonke"
       ],
@@ -50,12 +39,33 @@
       "emitted": false
     },
     {
+      "name": "d5b4124a3049c60cc1db.hot-update.json",
+      "size": 50,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "images/GeekTutor-img.jpg",
       "size": 66915,
       "chunks": [],
       "chunkNames": [],
       "info": {
         "sourceFilename": "packages/rukky/src/Assets/img/GeekTutor-img.jpg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/abeg-svg.svg",
+      "size": 1209,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/rukky/src/Assets/img/abeg-svg.svg"
       },
       "emitted": false
     },
@@ -70,12 +80,42 @@
       "emitted": false
     },
     {
+      "name": "images/email-svg.svg",
+      "size": 816,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/rukky/src/Assets/img/email-svg.svg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/paystack-svg.svg",
+      "size": 5669,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/rukky/src/Assets/img/paystack-svg.svg"
+      },
+      "emitted": false
+    },
+    {
       "name": "images/showcase-img.jpg",
       "size": 217593,
       "chunks": [],
       "chunkNames": [],
       "info": {
         "sourceFilename": "packages/rukky/src/Assets/img/showcase-img.jpg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/twitter-svg.svg",
+      "size": 1820,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/rukky/src/Assets/img/twitter-svg.svg"
       },
       "emitted": false
     }
@@ -88,7 +128,7 @@
       ],
       "assets": [
         "aderonke.module.js",
-        "aderonke.51406aef24f39620874c.hot-update.js"
+        "aderonke.d5b4124a3049c60cc1db.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -100,7 +140,7 @@
       "id": "aderonke",
       "files": [
         "aderonke.module.js",
-        "aderonke.51406aef24f39620874c.hot-update.js"
+        "aderonke.d5b4124a3049c60cc1db.hot-update.js"
       ]
     }
   ]

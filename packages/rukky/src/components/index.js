@@ -5,6 +5,9 @@ import Link from "@frontity/components/link"
 import Header from "./Header/Header"
 import Bio from "./Bio/Bio"
 import Showcase from "./Showcase/Showcase"
+import HomeBlog from "./Blog/HomeBlog"
+import Contact from "./Contact/Contact"
+import Footer from "./Footer/Footer"
 
 
 const Root = ({ state }) => {
@@ -12,6 +15,7 @@ const Root = ({ state }) => {
     <>
     <Global 
       styles={css`
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
         :root {
           --role-font-size: 22.5px;
           --role-font-size-grow: 25.5px;
@@ -33,6 +37,9 @@ const Root = ({ state }) => {
       <Header />
       <Bio />
       <Showcase />
+      <HomeBlog />
+      <Contact />
+      <Footer />
 
       {/* <h1>Hello Geektutor</h1>
       <p>Current URL: {state.router.link}</p>
