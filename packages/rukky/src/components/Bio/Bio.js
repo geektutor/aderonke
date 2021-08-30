@@ -9,40 +9,40 @@ import GeekImg from "../../Assets/img/GeekTutor-img.jpg"
 const Bio = () => {
     return(
         <BioContainer>
-            <section class="bio">
-                <div class="section-header">
+            <section className="bio">
+                <div className="section-header">
                     <h2>Bio</h2>
                 </div>
-                <div class="bio-contents">
-                    <div class="images-container">
-                        <div class="images">
+                <div className="bio-contents">
+                    <div className="images-container">
+                        <div className="images">
                             <img src={GeekImg} alt="GeekTutor"/>
                             <img src={GeekImg} alt="GeekTutor"/>
                             <img src={GeekImg} alt="GeekTutor"/>
                         </div>
                     </div>
-                    <div class="bio-experience">
-                        <div class="experience-container">
-                            <div class="experience">
-                                <div class="img">
+                    <div className="bio-experience">
+                        <div className="experience-container">
+                            <div className="experience">
+                                <div className="img">
                                     <img src={astericBullet} alt="Experience 1"/>
                                 </div>
                                 <p>Eight years of web development with PHP, two years of mobile development with Flutter</p>
                             </div>
-                            <div class="experience">
-                                <div class="img">
+                            <div className="experience">
+                                <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
                                 <p>Twenty years of wordpress, developed over 40 wordpress websites across e-commerce, business, professional and personal fields</p>
                             </div>
-                            <div class="experience">
-                                <div class="img">
+                            <div className="experience">
+                                <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
                                 <p>Product Manager @pethsdigitals, supervised and launched software products used by over 1,000,000 customers worldwide</p>
                             </div>
-                            <div class="experience">
-                                <div class="img">
+                            <div className="experience">
+                                <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
                                 <p>Community advocate for DSC Unilag(ex lead), GDG Lagos, OSCA Africa and Wordpress Lagos</p>
