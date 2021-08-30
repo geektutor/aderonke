@@ -48,7 +48,7 @@ const HomeBlog = () =>{
                             </div>
                         </div>
                         <div className="blog-btn-container">
-                            <button className="blog-btn">Go to blog page &#8663;</button>
+                            <button className="blog-btn">Go to blog page</button>
                         </div>
                     </div>
                 </div>
