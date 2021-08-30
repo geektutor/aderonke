@@ -24,7 +24,7 @@ const HomeBlog = () =>{
                         <div className="blog-contents">
                             <div className="blog-card">
                                 <div className="blog-content-title">
-                                    <h3><a href="#">Now, My Watch Has Ended &#8599;</a></h3>
+                                    <h3><a href="#">Now, My Watch Has Ended &#8663;</a></h3>
                                 </div>
                                 <div className="blog-content-description">
                                     Over the past one year as the Developer Student Club Lead, I have worked with amazing individuals who have helped me in my path...
@@ -32,7 +32,7 @@ const HomeBlog = () =>{
                             </div>
                             <div className="blog-card">
                                 <div className="blog-content-title">
-                                    <h3><a href="#">Now, My Watch Has Ended &#8599;</a></h3>
+                                    <h3><a href="#">Now, My Watch Has Ended &#8663;</a></h3>
                                 </div>
                                 <div className="blog-content-description">
                                     Over the past one year as the Developer Student Club Lead, I have worked with amazing individuals who have helped me in my path...
@@ -40,7 +40,7 @@ const HomeBlog = () =>{
                             </div>
                             <div className="blog-card">
                                 <div className="blog-content-title">
-                                    <h3><a href="#">Now, My Watch Has Ended &#8599;</a></h3>
+                                    <h3><a href="#">Now, My Watch Has Ended &#8663;</a></h3>
                                 </div>
                                 <div className="blog-content-description">
                                     Over the past one year as the Developer Student Club Lead, I have worked with amazing individuals who have helped me in my path...
@@ -48,7 +48,7 @@ const HomeBlog = () =>{
                             </div>
                         </div>
                         <div className="blog-btn-container">
-                            <button className="blog-btn">Go to blog page &#8599;</button>
+                            <button className="blog-btn">Go to blog page &#8663;</button>
                         </div>
                     </div>
                 </div>
