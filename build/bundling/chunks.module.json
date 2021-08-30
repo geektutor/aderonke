@@ -1,19 +1,19 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "65daba18487a76e18237",
+  "hash": "74dd62572e9d901b4471",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\build\\static",
   "assetsByChunkName": {
     "aderonke": [
       "aderonke.module.js",
-      "aderonke.d5b4124a3049c60cc1db.hot-update.js"
+      "aderonke.f00ff85700ae24e3c4f4.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "aderonke.d5b4124a3049c60cc1db.hot-update.js",
-      "size": 17456,
+      "name": "aderonke.f00ff85700ae24e3c4f4.hot-update.js",
+      "size": 14558,
       "chunks": [
         "aderonke"
       ],
@@ -28,7 +28,7 @@
     },
     {
       "name": "aderonke.module.js",
-      "size": 6499529,
+      "size": 6499530,
       "chunks": [
         "aderonke"
       ],
@@ -39,7 +39,7 @@
       "emitted": false
     },
     {
-      "name": "d5b4124a3049c60cc1db.hot-update.json",
+      "name": "f00ff85700ae24e3c4f4.hot-update.json",
       "size": 50,
       "chunks": [],
       "chunkNames": [],
@@ -128,7 +128,7 @@
       ],
       "assets": [
         "aderonke.module.js",
-        "aderonke.d5b4124a3049c60cc1db.hot-update.js"
+        "aderonke.f00ff85700ae24e3c4f4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -140,7 +140,7 @@
       "id": "aderonke",
       "files": [
         "aderonke.module.js",
-        "aderonke.d5b4124a3049c60cc1db.hot-update.js"
+        "aderonke.f00ff85700ae24e3c4f4.hot-update.js"
       ]
     }
   ]
