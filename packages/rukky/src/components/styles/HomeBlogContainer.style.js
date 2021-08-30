@@ -123,7 +123,7 @@ const HomeBlogContainer = styled.div`
 
 @media (max-width: 400px) {
   .blog .blog-section-contents .blog-contents-container .blog-contents .blog-card {
-    padding: 5px;
+    padding: 3px;
   }
 }
 `
