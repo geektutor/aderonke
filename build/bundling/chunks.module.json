@@ -1,19 +1,89 @@
 {
-  "errors": [],
-  "warnings": [],
-  "hash": "039196891b6cabf7ce83",
+  "errors": [
+    "./node_modules/@chakra-ui/css-reset/dist/esm/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@chakra-ui\\css-reset\\dist\\esm\\index.js'",
+    "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\is-prop-valid\\dist\\emotion-is-prop-valid.browser.esm.js'",
+    "./node_modules/@emotion/memoize/dist/emotion-memoize.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\memoize\\dist\\emotion-memoize.browser.esm.js'",
+    "./node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\serialize\\dist\\emotion-serialize.browser.esm.js'",
+    "./node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\sheet\\dist\\emotion-sheet.browser.esm.js'",
+    "./node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\utils\\dist\\emotion-utils.browser.esm.js'",
+    "./node_modules/@emotion/weak-memoize/dist/weak-memoize.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@emotion\\weak-memoize\\dist\\weak-memoize.browser.esm.js'",
+    "./node_modules/@frontity/error/index.ts\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@frontity\\error\\index.ts'",
+    "./node_modules/@frontity/observer-util/dist/bundle.es.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@frontity\\observer-util\\dist\\bundle.es.js'",
+    "./node_modules/@frontity/react-easy-state/dist/bundle.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@frontity\\react-easy-state\\dist\\bundle.js'",
+    "./node_modules/@frontity/type-declarations/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@frontity\\type-declarations\\index.js'",
+    "./node_modules/@popperjs/core/lib/popper.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\@popperjs\\core\\lib\\popper.js'",
+    "./node_modules/ansi-html/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\ansi-html\\index.js'",
+    "./node_modules/decode-uri-component/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\decode-uri-component\\index.js'",
+    "./node_modules/deepmerge/dist/cjs.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\deepmerge\\dist\\cjs.js'",
+    "./node_modules/detect-node-es/esm/browser.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\detect-node-es\\esm\\browser.js'",
+    "./node_modules/filter-obj/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\filter-obj\\index.js'",
+    "./node_modules/framer-motion/node_modules/tslib/tslib.es6.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\framer-motion\\node_modules\\tslib\\tslib.es6.js'",
+    "./node_modules/framesync/dist/es/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\framesync\\dist\\es\\index.js'",
+    "./node_modules/get-nonce/dist/es2015/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\get-nonce\\dist\\es2015\\index.js'",
+    "./node_modules/get-value/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\get-value\\index.js'",
+    "./node_modules/hey-listen/dist/hey-listen.es.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\hey-listen\\dist\\hey-listen.es.js'",
+    "./node_modules/himalaya/lib/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\himalaya\\lib\\index.js'",
+    "./node_modules/html-entities/lib/index.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\html-entities\\lib\\index.js'",
+    "./node_modules/core-js/modules/es.array-buffer.constructor.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array-buffer.constructor.js'",
+    "./node_modules/core-js/modules/es.array-buffer.slice.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array-buffer.slice.js'",
+    "./node_modules/core-js/modules/es.array.flat.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array.flat.js'",
+    "./node_modules/core-js/modules/es.array.iterator.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array.iterator.js'",
+    "./node_modules/core-js/modules/es.array.reduce.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array.reduce.js'",
+    "./node_modules/core-js/modules/es.array.reverse.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array.reverse.js'",
+    "./node_modules/core-js/modules/es.array.sort.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.array.sort.js'",
+    "./node_modules/core-js/modules/es.number.to-fixed.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.number.to-fixed.js'",
+    "./node_modules/core-js/modules/es.object.assign.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.object.assign.js'",
+    "./node_modules/core-js/modules/es.object.from-entries.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.object.from-entries.js'",
+    "./node_modules/core-js/modules/es.promise.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.promise.js'",
+    "./node_modules/core-js/modules/es.regexp.constructor.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.regexp.constructor.js'",
+    "./node_modules/core-js/modules/es.regexp.exec.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.regexp.exec.js'",
+    "./node_modules/core-js/modules/es.regexp.flags.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.regexp.flags.js'",
+    "./node_modules/core-js/modules/es.regexp.to-string.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.regexp.to-string.js'",
+    "./node_modules/core-js/modules/es.string.ends-with.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.ends-with.js'",
+    "./node_modules/core-js/modules/es.string.includes.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.includes.js'",
+    "./node_modules/core-js/modules/es.string.match.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.match.js'",
+    "./node_modules/core-js/modules/es.string.replace.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.replace.js'",
+    "./node_modules/core-js/modules/es.string.search.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.search.js'",
+    "./node_modules/core-js/modules/es.string.split.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.split.js'",
+    "./node_modules/core-js/modules/es.string.starts-with.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.starts-with.js'",
+    "./node_modules/core-js/modules/es.string.trim.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.string.trim.js'",
+    "./node_modules/core-js/modules/es.symbol.async-iterator.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.symbol.async-iterator.js'",
+    "./node_modules/core-js/modules/es.symbol.description.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.symbol.description.js'",
+    "./node_modules/core-js/modules/es.symbol.replace.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.symbol.replace.js'",
+    "./node_modules/core-js/modules/es.typed-array.float32-array.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.typed-array.float32-array.js'",
+    "./node_modules/core-js/modules/es.typed-array.sort.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.typed-array.sort.js'",
+    "./node_modules/core-js/modules/es.typed-array.to-locale-string.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\es.typed-array.to-locale-string.js'",
+    "./node_modules/core-js/modules/web.dom-collections.iterator.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\web.dom-collections.iterator.js'",
+    "./node_modules/core-js/modules/web.immediate.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\web.immediate.js'",
+    "./node_modules/core-js/modules/web.url.js\nModule build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\core-js\\modules\\web.url.js'"
+  ],
+  "warnings": [
+    "./node_modules/framer-motion/node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js\nModule build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\node_modules\\framer-motion\\node_modules\\@emotion\\is-prop-valid\\dist\\is-prop-valid.browser.esm.js'"
+  ],
+  "hash": "509b513db8e2a205f2e0",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Onige\\Documents\\WORKPLACE\\GeekTutor\\geektutor_React\\build\\static",
   "assetsByChunkName": {
     "aderonke": [
       "aderonke.module.js",
-      "aderonke.e6378223a496140abe5d.hot-update.js"
+      "aderonke.31c207efc451ad849b51.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "aderonke.e6378223a496140abe5d.hot-update.js",
-      "size": 14557,
+      "name": "31c207efc451ad849b51.hot-update.json",
+      "size": 50,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "aderonke.31c207efc451ad849b51.hot-update.js",
+      "size": 876,
       "chunks": [
         "aderonke"
       ],
@@ -28,7 +98,7 @@
     },
     {
       "name": "aderonke.module.js",
-      "size": 6499509,
+      "size": 11401398,
       "chunks": [
         "aderonke"
       ],
@@ -36,17 +106,6 @@
         "aderonke"
       ],
       "info": {},
-      "emitted": false
-    },
-    {
-      "name": "e6378223a496140abe5d.hot-update.json",
-      "size": 50,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
       "emitted": false
     },
     {
@@ -128,7 +187,7 @@
       ],
       "assets": [
         "aderonke.module.js",
-        "aderonke.e6378223a496140abe5d.hot-update.js"
+        "aderonke.31c207efc451ad849b51.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -140,7 +199,7 @@
       "id": "aderonke",
       "files": [
         "aderonke.module.js",
-        "aderonke.e6378223a496140abe5d.hot-update.js"
+        "aderonke.31c207efc451ad849b51.hot-update.js"
       ]
     }
   ]

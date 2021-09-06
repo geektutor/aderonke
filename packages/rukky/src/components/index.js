@@ -2,12 +2,16 @@ import React from "react"
 import { connect, Global, css } from "frontity"
 import Link from "@frontity/components/link"
 
+// CSS Library
+import { ChakraProvider } from "@chakra-ui/react"
+
 import Header from "./Header/Header"
 import Bio from "./Bio/Bio"
 import Showcase from "./Showcase/Showcase"
 import HomeBlog from "./Blog/HomeBlog"
 import Contact from "./Contact/Contact"
 import Footer from "./Footer/Footer"
+import BlogPage from "./Blog/BlogPage"
 
 
 const Root = ({ state }) => {
@@ -35,11 +39,16 @@ const Root = ({ state }) => {
       }
     />
       <Header />
-      <Bio />
+      {/* <Bio />
       <Showcase />
       <HomeBlog />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      {/* <BlogPage /> */}
+
+      <ChakraProvider>
+        <BlogPage />
+      </ChakraProvider>
 
       {/* <h1>Hello Geektutor</h1>
       <p>Current URL: {state.router.link}</p>

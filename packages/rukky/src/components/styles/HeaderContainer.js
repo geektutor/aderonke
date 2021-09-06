@@ -52,6 +52,7 @@ body {
 }
 
 .header nav .nav-container .navBtn-container {
+  z-index: 2;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -70,6 +71,25 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4px;
+}
+
+.header nav .nav-container .navBtn-container .bar {
+  border-radius: 5px;
+  background: #013B59;
+  width: 36px;
+  height: 8px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.header nav .nav-container .navBtn-container .cross1 {
+  -webkit-transform: rotateZ(45deg) translateY(5px) translateX(3.5px);
+          transform: rotateZ(45deg) translateY(5px) translateX(3.5px);
+}
+
+.header nav .nav-container .navBtn-container .cross2 {
+  -webkit-transform: rotateZ(-45deg) translateY(-5px) translateX(3.5px);
+          transform: rotateZ(-45deg) translateY(-5px) translateX(3.5px);
 }
 
 .header nav .nav-container .navBtn-container .bar {

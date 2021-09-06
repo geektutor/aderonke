@@ -17,12 +17,18 @@
   },
   "prettier": {},
   "dependencies": {
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "@frontity/core": "^1.14.3",
     "@frontity/html2react": "^1.7.0",
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.4.4",
     "@frontity/wp-source": "^1.11.5",
+    "dayjs": "^1.10.6",
+    "framer-motion": "^4",
     "frontity": "^1.17.0",
+    "react-router-hash-link": "^2.4.3",
     "rukky": "file:packages/rukky"
   }
 }

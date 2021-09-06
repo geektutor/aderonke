@@ -6,10 +6,16 @@ const rukky = {
     theme: Root,
   },
   state: {
-    theme: {}
+    theme: {
+      Navbar: false
+    }
   },
   actions: {
-    theme: {}
+    theme: {
+      toggleNav: ({ state }) => {
+        state.theme.Navbar = !state.theme.Navbar
+      }
+    }
   },
 }
 
