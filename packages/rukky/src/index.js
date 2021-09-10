@@ -6,10 +6,21 @@ const rukky = {
     theme: Root,
   },
   state: {
-    theme: {}
+    theme: {
+      Navbar: false,
+      showBlog: false,
+    }
   },
   actions: {
-    theme: {}
+    theme: {
+      toggleNav: ({ state }) => {
+        state.theme.Navbar = !state.theme.Navbar
+      },
+      toggleBlog: ({ state }) => {
+        state.theme.showBlog = !state.theme.showBlog,
+        window.scrollTo(0, 0)
+      }
+    }
   },
 }
 
