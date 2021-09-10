@@ -1,17 +1,21 @@
 import React from 'react'
 import { connect, styled } from "frontity"
-import HeaderContainer from "../styles/HeaderContainer"
 
-const Header = () => {
+import HeaderContainer from "../styles/HeaderContainer"
+import Navbar from '../NavBar/Navbar'
+
+const Header = ({ state, actions }) => {
+    let cross1 = state.theme.Navbar ? "cross1" : null;
+    let cross2 = state.theme.Navbar ? "cross2" : null
     return(
         <>
         <HeaderContainer>
             <section className="header">
                 <nav>
                     <div className="nav-container">
-                        <div className="navBtn-container">
-                            <div className="bar"></div>
-                            <div className="bar"></div>
+                        <div className="navBtn-container" onClick={actions.theme.toggleNav}>
+                            <div className={`bar ${cross1}`}></div>
+                            <div className={`bar ${cross2}`}></div>
                         </div>
                         <div className="download-resume-container">
                             <button className="download-btn">
@@ -20,6 +24,7 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
+                <Navbar />
                 <div className="header-container">
                     <div className="header-contents">
                         <div className="right-side">
