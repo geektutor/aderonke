@@ -3,7 +3,7 @@ import { connect } from 'frontity'
 
 import HomeBlogContainer from '../styles/HomeBlogContainer.style'
 
-const HomeBlog = () =>{
+const HomeBlog = ({ actions }) =>{
     return(
         <HomeBlogContainer>
             <section className="blog">
@@ -48,7 +48,7 @@ const HomeBlog = () =>{
                             </div>
                         </div>
                         <div className="blog-btn-container">
-                            <button className="blog-btn">Go to blog page</button>
+                            <button className="blog-btn" onClick={actions.theme.toggleBlog}>Go to blog page</button>
                         </div>
                     </div>
                 </div>

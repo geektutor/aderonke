@@ -16,7 +16,7 @@ const BlogPage = ({ state }) => {
                     const postItems = state.source.post[e.id]
                     console.log(postItems.title)
                     return(
-                        <BlogCards key={postItems.id} link={e.link} title={postItems.title.rendered} excerpt={postItems.excerpt.rendered}/>
+                        <BlogCards key={postItems.id} link={e.link} title={postItems.title.rendered} excerpt={postItems.excerpt.rendered} date={postItems.date}/>
                     )
                 })
             }

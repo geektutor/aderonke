@@ -3,7 +3,6 @@ import { connect, styled } from 'frontity'
 
 
 const HeaderContainer = styled.div`
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 :root {
   --role-font-size: 22.5px;
   --role-font-size-grow: 25.5px;
