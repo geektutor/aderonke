@@ -64,9 +64,9 @@ const ContactContainer = styled.div`
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid black;
-  height: 40px;
+  height: 20px;
   color: black;
   font-size: 20px;
   line-height: 34px;
@@ -91,6 +91,11 @@ const ContactContainer = styled.div`
   }
   .contact-me .contact-section-container .contact-links-container .contact-links {
     width: 50%;
+  }
+}
+@media (max-width: 600px){
+  .contact-me .section-header{
+    text-align: center;
   }
 }
 `
