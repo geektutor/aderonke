@@ -17,8 +17,6 @@ const Bio = () => {
                     <div className="images-container">
                         <div className="images">
                             <img src={GeekImg} alt="GeekTutor"/>
-                            <img src={GeekImg} alt="GeekTutor"/>
-                            <img src={GeekImg} alt="GeekTutor"/>
                         </div>
                     </div>
                     <div className="bio-experience">
@@ -33,7 +31,7 @@ const Bio = () => {
                                 <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
-                                <p>Twenty years of wordpress, developed over 40 wordpress websites across e-commerce, business, professional and personal fields</p>
+                                <p> Geeking out with HTML, CSS and PHP since 2012. WordPress since 2013. Transitioned into Product Management in 2021.</p>
                             </div>
                             <div className="experience">
                                 <div className="img">
@@ -45,7 +43,7 @@ const Bio = () => {
                                 <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
-                                <p>Community advocate for DSC Unilag(ex lead), GDG Lagos, OSCA Africa and Wordpress Lagos</p>
+                                <p>Lead of the Google Developer Student Club Unilag (2019-20) and increased club membership by over 2k people. Served as Chairman of the Engineering Career Expo. Co-organizer of WordPress Lagos Meetup Group.</p>
                             </div>
                         </div>
                     </div>

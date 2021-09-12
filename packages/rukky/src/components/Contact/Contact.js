@@ -23,16 +23,16 @@ const Contact = () => {
                     <div className="contact-links-container">
                         <div className="contact-links">
                             <div className="contact-cards">
-                                <a href="#"><span><img src={emailSvg} /> akinjobi.sodiq@gmail.com</span></a>
+                                <a href="mailto: akinjobi.sodiq@gmail.com" target="_blank"><span><img src={emailSvg} /> akinjobi.sodiq@gmail.com</span></a>
                             </div>
                             <div className="contact-cards">
-                                <a href="#"><span><img src={twitterSvg} alt="twitter" /> @geektutor</span></a>
+                                <a href="https://twitter.com/Geektutor" target="_blank"><span><img src={twitterSvg} alt="twitter" /> @geektutor</span></a>
                             </div>
                             <div className="contact-cards">
-                                <a href="#"><span><img src={paystackSvg} alt="paystack" /> geektutor.xyz/go/pay</span></a>
+                                <a href="geektutor.xyz/go/pay" target="_blank"><span><img src={paystackSvg} alt="paystack" /> geektutor.xyz/go/pay</span></a>
                             </div>
                             <div className="contact-cards">
-                                <a href="#"><span><img src={abegSvg} alt="abeg" /> @geektutor</span></a>
+                                <a href="https://abeg.app/profile/geektutor" target="_blank"><span><img src={abegSvg} alt="abeg" /> @geektutor</span></a>
                             </div>
                         </div>
                     </div>

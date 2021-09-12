@@ -26,7 +26,6 @@ const BioContainer = styled.div`
 }
 
 .bio .bio-contents .images-container .images {
-  overflow-x: scroll;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +70,7 @@ const BioContainer = styled.div`
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 30px;
+  align-items: center;
 }
 
 .bio .bio-contents .bio-experience .experience-container .experience .img img {
@@ -92,7 +92,7 @@ const BioContainer = styled.div`
     overflow-x: auto;
   }
   .bio .bio-contents .images-container .images img {
-    width: 358px;
+    width: 450px;
   }
   .bio .bio-contents .bio-experience .experience-container .experience {
     margin: 10px;
