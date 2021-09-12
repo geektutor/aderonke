@@ -56,7 +56,7 @@ const HomeBlogContainer = styled.div`
 
 .blog .blog-section-contents .blog-section-caption p {
   text-align: center;
-  font-size: 27px;
+  font-size: 1.3rem;
   line-height: 37px;
   letter-spacing: 0.01em;
 }
@@ -94,7 +94,7 @@ const HomeBlogContainer = styled.div`
 }
 
 .blog .blog-section-contents .blog-contents-container .blog-contents .blog-card {
-  width: 350px;
+  width: 330px;
   height: auto;
   padding: 20px;
   border-left: 2px solid #154A70;
@@ -123,7 +123,7 @@ const HomeBlogContainer = styled.div`
 
 @media (max-width: 400px) {
   .blog .blog-section-contents .blog-contents-container .blog-contents .blog-card {
-    padding: 3px;
+    padding: 8px;
   }
 }
 `
