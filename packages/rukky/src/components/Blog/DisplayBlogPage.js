@@ -11,7 +11,7 @@ const DisplayBlogPage = ({ state }) => {
     const date = state.source.post[pageData.id].date
     let formattedDate = dayjs(date).format('MMM DD, YYYY');
     const content = state.source.post[pageData.id].content.rendered
-    console.log(pageData.id, author.name);
+    // console.log(pageData.id, author.name);
     return(
         <Box p="15px">
             <h2>
