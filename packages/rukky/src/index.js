@@ -9,6 +9,7 @@ const rukky = {
     theme: {
       Navbar: false,
       showBlog: false,
+      homeBlogArray: []
     }
   },
   actions: {

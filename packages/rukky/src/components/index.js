@@ -1,6 +1,7 @@
 import React from "react"
 import { connect, Global, css } from "frontity"
 import Link from "@frontity/components/link"
+import Switch from '@frontity/components/switch'
 
 // CSS Library
 import { ChakraProvider } from "@chakra-ui/react"
@@ -13,9 +14,12 @@ import Contact from "./Contact/Contact"
 import Footer from "./Footer/Footer"
 import BlogPage from "./Blog/BlogPage"
 import BlogContainer from "./Blog/BlogContainer"
+import HomePage from "./HomePage"
+import DisplayBlogPage from "./Blog/DisplayBlogPage"
 
 
 const Root = ({ state }) => {
+  const data = state.source.get(state.router.link)
   return (
     <>
     <Global 
@@ -46,12 +50,12 @@ const Root = ({ state }) => {
         <Footer />
       </ChakraProvider>) : (
       <>
-        <Header />
-      <Bio />
-      <Showcase />
-      <HomeBlog />
-      <Contact />
-      <Footer />
+        <Switch>
+          <HomePage when={data.isHome} />
+          <ChakraProvider>
+            <BlogContainer when={data.isPost}/>
+          </ChakraProvider>
+        </Switch>
       </>
       ) }
       

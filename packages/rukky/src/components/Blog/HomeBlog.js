@@ -2,8 +2,12 @@ import React from 'react'
 import { connect } from 'frontity'
 
 import HomeBlogContainer from '../styles/HomeBlogContainer.style'
+import BlogCards from './BlogCards'
+import HomeBlogCards from './HomeBlogCards'
 
-const HomeBlog = ({ actions }) =>{
+const HomeBlog = ({ state, actions }) =>{
+    const data = state.source.get(state.router.link)
+    const homeArray = data.items.filter((item, key) => key <= 2);
     return(
         <HomeBlogContainer>
             <section className="blog">
@@ -22,7 +26,15 @@ const HomeBlog = ({ actions }) =>{
                     </div>
                     <div className="blog-contents-container">
                         <div className="blog-contents">
-                            <div className="blog-card">
+                        {
+                            homeArray.map((blog) => {
+                                const items = state.source.post[blog.id]
+                                return(
+                                    <HomeBlogCards key={items.id} link={blog.link} title={items.title.rendered} excerpt={items.excerpt.rendered} date={items.date} />
+                                )
+                            })
+                        }
+                            {/* <div className="blog-card">
                                 <div className="blog-content-title">
                                     <h3><a href="#">Now, My Watch Has Ended &#8663;</a></h3>
                                 </div>
@@ -45,7 +57,7 @@ const HomeBlog = ({ actions }) =>{
                                 <div className="blog-content-description">
                                     Over the past one year as the Developer Student Club Lead, I have worked with amazing individuals who have helped me in my path...
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="blog-btn-container">
                             <button className="blog-btn" onClick={actions.theme.toggleBlog}>Go to blog page</button>
