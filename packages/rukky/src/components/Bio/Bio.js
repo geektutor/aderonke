@@ -25,7 +25,7 @@ const Bio = () => {
                                 <div className="img">
                                     <img src={astericBullet} alt="Experience 1"/>
                                 </div>
-                                <p>Eight years of web development with PHP, two years of mobile development with Flutter</p>
+                                <p>Played with Wapka, Webs and those sites back in the days.</p>
                             </div>
                             <div className="experience">
                                 <div className="img">
@@ -37,7 +37,7 @@ const Bio = () => {
                                 <div className="img">
                                     <img src={astericBullet} alt="Experience 1" />
                                 </div>
-                                <p>Product Manager @pethsdigitals, supervised and launched software products used by over 1,000,000 customers worldwide</p>
+                                <p>Passionate about Tech, Community and Education. Co-organizer of WordPress Lagos Meetup Group.</p>
                             </div>
                             <div className="experience">
                                 <div className="img">
