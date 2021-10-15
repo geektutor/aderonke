@@ -5,7 +5,7 @@ body {
   @include webkit;
 }
 .pd-home {
-  padding-top: 80px;
+  padding-top: 116px;
   background-color: white;
   padding-bottom: 50px;
 
@@ -17,7 +17,7 @@ body {
     width: 85%;
     max-width: 1140px;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 67px;
     .intro {
       display: flex;
       align-items: center;
@@ -26,7 +26,7 @@ body {
       .text {
         h1 {
           font-weight: bold;
-          font-size: 80px;
+          font-size: 75px;
           line-height: 106.9%;
           color: #000000;
           @include mq(650px) {
@@ -56,7 +56,7 @@ body {
 
           text-align: right;
           font-weight: 600;
-          font-size: 20px;
+          font-size: 18px;
           margin-bottom: 17px;
 
           &:hover {
@@ -67,7 +67,7 @@ body {
       }
     }
     .prop {
-      margin-top: 40px;
+      margin-top: 24px;
       ul {
         color: #1a1a1a;
         &.bthemeT {
@@ -76,12 +76,12 @@ body {
         li {
           list-style-type: none;
           font-weight: 700;
-          font-size: 20px;
+          font-size: 27px;
           line-height: 106.9%;
-          margin-bottom: 15px;
+          margin-bottom: 19px;
 
           @include mq(400px) {
-            font-size: 15px;
+            font-size: 18px;
           }
         }
       }
@@ -102,16 +102,16 @@ body {
   }
   .about {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 110px;
     width: 85%;
     max-width: 1140px;
-    padding-bottom: 50px;
+    padding-bottom: 135px;
 
     p.first,
     p.second {
       font-weight: 700;
       width: 80%;
-      font-size: 20px;
+      font-size: 24px;
       line-height: 49px;
       /* or 49px */
       color: $black;
@@ -125,11 +125,11 @@ body {
       }
     }
     p.first {
-      margin-bottom: 25px;
+      margin-bottom: 23px;
     }
     .resume {
-      width: 170px;
-      margin-top: 30px;
+      width: 200px;
+      margin-top: 57px;
       @include mq(768px) {
         width: 130px;
       }
@@ -137,8 +137,8 @@ body {
   }
   .work {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 81px;
+    padding-bottom: 139px;
     &.bg {
       background-color: #dedede;
     }
@@ -169,7 +169,7 @@ body {
           }
           .title {
             font-weight: 600;
-            font-size: 30px;
+            font-size: 36px;
             margin-bottom: 15px;
             color: $black;
             @include mq(768px) {
@@ -178,7 +178,7 @@ body {
           }
           .aboutT {
             font-weight: 500;
-            font-size: 20px;
+            font-size: 24px;
             line-height: 39px;
             margin-bottom: 15px;
             @include mq(768px) {
@@ -196,8 +196,8 @@ body {
   }
   .blog {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 63px;
+    padding-bottom: 78px;
     .coverBlog{
       width: 85%;
       max-width: 1140px;
@@ -209,7 +209,7 @@ body {
       background-color: #dedede;
     }
     .eachBlog {
-      margin-bottom: 30px;
+      margin-bottom: 39px;
       width: 400px;
       @include mq(768px) {
         width: 250px;
@@ -229,8 +229,11 @@ body {
   justify-content: space-between;
   padding-bottom: 3px;
   border-bottom: 3px solid $red;
+  @include mq(768px) {
+    width:100% ;
+  }
   .tt {
-    font-size: 23px;
+    font-size: 30px;
     color: $red;
     font-weight: 300;
     @include mq(768px) {
@@ -244,7 +247,7 @@ body {
     }
   }
   img {
-    width: 30px;
+    width: 36px;
     @include mq(768px) {
       width: 25px;
     }
@@ -255,8 +258,16 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  float: right;
+  width: 28px;
+  height: 16px;
+}
+.switch2 {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 28px;
+  height: 16px;
 }
 
 .switch input { 
@@ -264,50 +275,66 @@ body {
   width: 0;
   height: 0;
 }
+.switch2 input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-.slider {
+.slider,.slider2 {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  border: 1px solid $black;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.slider:before {
+
+
+.slider:before,.slider2:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 8px;
+  width: 8px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  border: 1px solid $black;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  // background-color: #2196F3;
+  border: 1px solid #ffffff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #ffffff;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  border: 1px solid #ffffff;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+ 
 }
 
 /* Rounded sliders */
-.slider.round {
+.slider.round,.slider2.round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round:before,.slider2.round:before {
   border-radius: 50%;
 }
