@@ -60,7 +60,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="prop">
-        I'm a Product Manager, Project Manager, Community Advocate, and WordPress <i>Babalawo</i>.<br>
+        I'm a Product Manager, Project Manager, Community Advocate, and WordPress <i>Babalawo</i>.<br />
           <ul className={`${toggle ? "bthemeT" : ""}`}>
             <li>Project Manager</li>
             <li>Product Manager</li>
