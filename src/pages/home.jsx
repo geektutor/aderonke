@@ -112,7 +112,7 @@ const Home = () => {
               toggle={toggle}
               title={"Kuizu"}
               text={
-                "orem Ipsom Idolor nes i don’t know what I’m flipping typing butI need placeholder text so I just have to keep going.This issomewhat like a second paragraph, you know"
+                "Kuizu is an Anime quiz app for Otakus. I was the Product Manager for this app. I was responsible for assigning tasks to teams, getting people to partake in a survey and contribute to a question bank, and ensuring that things were up and ready in time for the launch."
               }
               url={"https://www.youtube.com/"}
             />
@@ -120,7 +120,7 @@ const Home = () => {
               toggle={toggle}
               title={"Kuizu"}
               text={
-                "orem Ipsom Idolor nes i don’t know what I’m flipping typing butI need placeholder text so I just have to keep going.This issomewhat like a second paragraph, you know"
+                "Kuizu is an Anime quiz app for Otakus. I was the Product Manager for this app. I was responsible for assigning tasks to teams, getting people to partake in a survey and contribute to a question bank, and ensuring that things were up and ready in time for the launch."
               }
               url={"https://www.youtube.com/"}
             />
