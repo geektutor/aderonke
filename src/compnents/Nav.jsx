@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import "../css/home.css";
 import menu from "../assets/images/menu.png";
-
+import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 
-const Nav = ({ handleToggle }) => {
+const Nav = ({ handleToggle,other }) => {
   const [isNavOpen, setisNavOpen] = useState(false);
 
   return (
@@ -28,7 +28,26 @@ const Nav = ({ handleToggle }) => {
       </div>
 
       <nav>
-        <ul className={`nav_list ${isNavOpen ? "nav-opened" : ""}`}>
+       { other==='true'?
+       <ul className={`nav_list ${isNavOpen ? "nav-opened" : ""}`}>
+       <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
+      
+         <Link to="/#about">Bio</Link>
+       </li>
+
+       <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
+
+         <Link to="/#work">work</Link>
+       </li>
+       <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
+       
+         <Link to="/#blog">Blog</Link>
+       </li>
+       <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
+         <Link to="/#contact">Contact</Link>
+       </li>
+     </ul>
+       : <ul className={`nav_list ${isNavOpen ? "nav-opened" : ""}`}>
           <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
             <a href="#about">Bio</a>
           </li>
@@ -42,7 +61,7 @@ const Nav = ({ handleToggle }) => {
           <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
             <a href="#contact">Contact</a>
           </li>
-        </ul>
+        </ul>}
       </nav>
     </header>
   );

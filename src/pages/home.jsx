@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import EachWork from "../compnents/eachWork";
 import LinkTo from "../compnents/linkTo";
 import Nav from "../compnents/Nav";
+import OneBlog from "../compnents/oneBlog";
 import "../css/home.css";
 
 const Home = () => {
   const [toggle, setToggle] = useState(false);
   const [blog, setBlog] = useState([]);
-console.log(blog)
+  console.log(blog);
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -17,14 +19,12 @@ console.log(blog)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setBlog(
-          data?.filter((val, i) => i <= 2)
-        )
+        setBlog(data?.filter((val, i) => i <= 2));
       })
       .catch((err) => {
         console.log(err);
       });
-  },[]);
+  }, []);
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
@@ -51,7 +51,7 @@ console.log(blog)
             <li>
               <a href="#contact">Contact</a>
             </li>
-            <li >
+            <li>
               <label class="switch">
                 <input onClick={handleToggle} type="checkbox" />
                 <span class="slider round"></span>
@@ -99,7 +99,11 @@ console.log(blog)
 
       <div id="work" className={`work ${toggle ? "bg" : ""}`}>
         <div className="coverWork">
-          <h2 className={`topic`}>My works</h2>
+    
+          <div className="heading">
+            <h2 className={`topic`}>My works</h2>
+            <Link to='/works' className="see">See all</Link>
+          </div>
           <div className="workDiv">
             <EachWork
               toggle={toggle}
@@ -146,21 +150,22 @@ console.log(blog)
 
       <div id="blog" className={`blog ${toggle ? "bg" : ""}`}>
         <div className="coverBlog">
-          <h2 className={`topic`}>Blog</h2>
+          <div className="heading">
+            <h2 className={`topic`}>Blog</h2>
+            <Link to='/blogs' className="see">See all</Link>
+          </div>
+
+         
+
+          <div className="allBlog">
           {
             blog && blog.map((item)=>{
               return(
-                <div key={item.id} className="eachBlog">
-                <LinkTo
-                  text={item.title && item.title.rendered}
-                  toggle={"grey"}
-                  url={"https://www.youtube.com/"}
-                />
-              </div>
+                <OneBlog key={item.id} des={item.excerpt && item.excerpt.rendered} name={item.title && item.title.rendered} />
               )
             })
           }
-        
+          </div>
         </div>
       </div>
 

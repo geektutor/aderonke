@@ -624,6 +624,12 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 135px;
 }
 
+@media screen and (max-width: 768px) {
+  .pd-home .about {
+    padding-bottom: 0px;
+  }
+}
+
 .pd-home .about p.first,
 .pd-home .about p.second {
   font-weight: 700;
@@ -677,6 +683,41 @@ body::-webkit-scrollbar-thumb {
   width: 85%;
   margin: auto;
   max-width: 1140px;
+}
+
+.pd-home .work .coverWork .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 69px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .work .coverWork .heading {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.pd-home .work .coverWork .heading .topic {
+  margin-bottom: 0;
+}
+
+.pd-home .work .coverWork .heading .see {
+  color: #D00000;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .work .coverWork .heading .see {
+    font-size: 18px;
+  }
 }
 
 .pd-home .work .coverWork .workDiv {
@@ -763,6 +804,52 @@ body::-webkit-scrollbar-thumb {
   max-width: 1140px;
   margin: auto;
   margin-top: 30px;
+}
+
+.pd-home .blog .coverBlog .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 69px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .blog .coverBlog .heading {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+.pd-home .blog .coverBlog .heading .topic {
+  margin-bottom: 0;
+}
+
+.pd-home .blog .coverBlog .heading .see {
+  color: #D00000;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .blog .coverBlog .heading .see {
+    font-size: 18px;
+  }
+}
+
+.pd-home .blog .coverBlog .allBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .pd-home .blog.bg {
@@ -915,4 +1002,94 @@ input:checked + .slider2:before {
 
 .slider.round:before, .slider2.round:before {
   border-radius: 50%;
+}
+
+.oneBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 66px;
+}
+
+@media screen and (max-width: 768px) {
+  .oneBlog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+
+.oneBlog .imgBox {
+  width: 48%;
+  height: 350px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .oneBlog .imgBox {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 250px;
+  }
+}
+
+.oneBlog .textSide {
+  width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .oneBlog .textSide {
+    width: 100%;
+  }
+}
+
+.oneBlog .textSide .name {
+  font-weight: 700;
+  width: 80%;
+  font-size: 36px;
+  line-height: 49px;
+  /* or 49px */
+  color: #1A1A1A;
+  margin-bottom: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .oneBlog .textSide .name {
+    font-size: 20px;
+    width: 100%;
+    line-height: 30px;
+  }
+}
+
+.oneBlog .textSide .name.bthemeT {
+  color: #ffffff;
+}
+
+.oneBlog .textSide .description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 49px;
+  /* or 49px */
+  color: #1A1A1A;
+  margin-bottom: 72px;
+}
+
+@media screen and (max-width: 768px) {
+  .oneBlog .textSide .description {
+    font-size: 15px;
+    margin-bottom: 50px;
+    line-height: 30px;
+  }
 }

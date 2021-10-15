@@ -106,6 +106,9 @@ body {
     width: 85%;
     max-width: 1140px;
     padding-bottom: 135px;
+    @include mq(768px) {
+      padding-bottom: 0px;
+    }
 
     p.first,
     p.second {
@@ -146,6 +149,28 @@ body {
       width: 85%;
       margin: auto;
       max-width: 1140px;
+      .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:69px;
+        @include mq(768px) {
+          font-size: 18px;
+          margin-bottom: 40px;
+        
+        }
+        .topic{
+          margin-bottom: 0;
+        }
+        .see{
+          color: $red;
+          font-size: 36px;
+          @include mq(768px) {
+            font-size: 18px;
+          
+          }
+        }
+      }
       .workDiv {
         display: flex;
         justify-content: space-between;
@@ -198,11 +223,40 @@ body {
     width: 100%;
     padding-top: 63px;
     padding-bottom: 78px;
+   
     .coverBlog{
       width: 85%;
       max-width: 1140px;
       margin: auto;
       margin-top: 30px;
+      .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:69px;
+        @include mq(768px) {
+          font-size: 18px;
+          margin-bottom: 40px;
+        
+        }
+        .topic{
+          margin-bottom: 0;
+        }
+        .see{
+          color: $red;
+          font-size: 36px;
+          @include mq(768px) {
+            font-size: 18px;
+          
+          }
+        }
+      }
+      .allBlog{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+      }
     }
    
     &.bg {
@@ -337,4 +391,67 @@ input:checked + .slider2:before {
 
 .slider.round:before,.slider2.round:before {
   border-radius: 50%;
+}
+
+
+.oneBlog{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 66px;
+  @include mq(768px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .imgBox{
+    width: 48%;
+    height: 350px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include mq(768px) {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 250px;
+    }
+  }
+  .textSide{
+    width: 48%;
+    @include mq(768px) {
+      width: 100%;
+    }
+    .name{
+      font-weight: 700;
+      width: 80%;
+      font-size: 36px;
+      line-height: 49px;
+      /* or 49px */
+      color: $black;
+      margin-bottom: 21px;
+      @include mq(768px) {
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+      }
+      &.bthemeT {
+        color: #ffffff;
+      }
+    }
+    .description{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 49px;
+      /* or 49px */
+      color: $black;
+      margin-bottom: 72px;
+      @include mq(768px) {
+        font-size: 15px;
+    margin-bottom: 50px;
+        line-height: 30px;
+      }
+    }
+  }
+
 }
