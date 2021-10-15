@@ -1,6 +1,6 @@
 import LinkTo from "./linkTo";
 
-const OneBlog = ({name,des,url}) => {
+const OneBlog = ({name,des,id}) => {
     function truncateString(str, num) {
         // If the length of str is less than or equal to num
         // just return str--don't truncate it.
@@ -15,17 +15,18 @@ const OneBlog = ({name,des,url}) => {
               <div className="imgBox"></div>
               <div className="textSide">
                 <p className="name">{name}</p>
-                <p className="description">
+                {/* <p className="description">
                  
                   {
                       des && truncateString(des,58)
                   }
-                </p>
+                </p> */}
+                <p className="description" dangerouslySetInnerHTML={{__html: des && truncateString(des,58)}} />
                 
                 <LinkTo
                   text={"Read More"}
                   toggle={"grey"}
-                  url={url}
+                  url={`/blog-post/${id}`}
                 />
               </div>
             </div>

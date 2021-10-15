@@ -636,8 +636,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.pd-home .about p.first,
-.pd-home .about p.second {
+.pd-home .about p.first, .pd-home .about div.first
+p.second {
   font-weight: 700;
   width: 80%;
   font-size: 24px;
@@ -646,17 +646,23 @@ body::-webkit-scrollbar-thumb {
   color: #1A1A1A;
 }
 
+.pd-home .about p.first img, .pd-home .about p.first figure, .pd-home .about div.first
+p.second img, .pd-home .about div.first
+p.second figure {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .pd-home .about p.first,
-  .pd-home .about p.second {
+  .pd-home .about p.first, .pd-home .about div.first
+p.second {
     font-size: 15px;
     width: 100%;
     line-height: 30px;
   }
 }
 
-.pd-home .about p.first.bthemeT,
-.pd-home .about p.second.bthemeT {
+.pd-home .about p.first.bthemeT, .pd-home .about div.first
+p.second.bthemeT {
   color: #ffffff;
 }
 

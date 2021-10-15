@@ -78,14 +78,16 @@ const Home = () => {
       <div id="about" className="about">
         <h2 className={`topic ${toggle ? "bthemeT" : ""}`}>About me</h2>
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          Sodiq Akinjobi is the recent past Student Lead of the University of
-          Lagos’ community which launched in 2018 and in the past year,
+          From the headline above, you can tell that I am a techie, and I love
+          it. I love managing people, being a part of or leading a team to build
+          incredible products that scale. It explains why I am a PM and a
+          community advocate.
         </p>
-        <p className={`second ${toggle ? "bthemeT" : ""}`}>
-          Played with Wapka, Webs and those sites back in the days Geeking out
-          with HTML, CSS and PHP since 2012. WordPress since 2013. Transitioned
-          into Product Management in 2021. Passionate about Tech, Community and
-          Education. Co-organizer of WordPress Lagos Meetup Group.
+        <p className={`first ${toggle ? "bthemeT" : ""}`}>
+          You must be wondering, "Why Babalawo?" Well, I am quite good at what I
+          do in the WordPress world, so much that my friends say it's
+          extraordinary. A Babalawo (the Yoruba word for a native doctor) has
+          special powers, hence the nickname.
         </p>
 
         <div className="resume">
@@ -99,10 +101,11 @@ const Home = () => {
 
       <div id="work" className={`work ${toggle ? "bg" : ""}`}>
         <div className="coverWork">
-    
           <div className="heading">
             <h2 className={`topic`}>My works</h2>
-            <Link to='/works' className="see">See all</Link>
+            <Link to="/works" className="see">
+              See all
+            </Link>
           </div>
           <div className="workDiv">
             <EachWork
@@ -128,23 +131,25 @@ const Home = () => {
       <div className="about">
         <h2 className={`topic ${toggle ? "bthemeT" : ""}`}>Experience</h2>
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          Played with Wapka, Webs and those sites back in the days.
+          It started from the days I used to play with Wapka, Webs and similar
+          sites. I started geeking with HTML, CSS, and PHP in 2012 and then
+          WordPress in 2013. I did that for a while, working individually or
+          within a team to create beautiful websites, helping people to bring
+          their idea to a reality using digital products.
         </p>
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          Geeking out with HTML, CSS and PHP since 2012. WordPress since 2013.
-          Transitioned into Product Management in 2021.
+          In 2021, I transitioned fully into Product Management, after
+          practising as a rookie PM for a few years. I took a couple of courses
+          , including a ProductDive PM Course.
         </p>
 
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          WordPress since 2013. Transitioned into Product Management in 2021.
-          Passionate about Tech, Community and Education. Co-organizer of
-          WordPress Lagos Meetup Group.
-        </p>
-
-        <p className={`second ${toggle ? "bthemeT" : ""}`}>
-          Lead of the Google Developer Student Club Unilag (2019-20) and
-          increased club membership by over 2k people. Served as Chairman of the
-          Engineering Career Expo. Co-organizer of WordPress Lagos Meetup Group.
+          I am passionate about tech, community, and education. I have
+          demonstrated this in various capacities: Co-organizer of WordPress
+          Lagos Meetup Group, Lead of the Google Developer Student Club, UNILAG
+          (2019-2020), where I increased club membership by over 2k people,
+          Chairman of the Engineering Career Expo, and other roles I have taken
+          up and executed excellently.
         </p>
       </div>
 
@@ -152,19 +157,23 @@ const Home = () => {
         <div className="coverBlog">
           <div className="heading">
             <h2 className={`topic`}>Blog</h2>
-            <Link to='/blogs' className="see">See all</Link>
+            <Link to="/blogs" className="see">
+              See all
+            </Link>
           </div>
 
-         
-
           <div className="allBlog">
-          {
-            blog && blog.map((item)=>{
-              return(
-                <OneBlog key={item.id} des={item.excerpt && item.excerpt.rendered} name={item.title && item.title.rendered} />
-              )
-            })
-          }
+            {blog &&
+              blog.map((item) => {
+                return (
+                  <OneBlog
+                    key={item.id}
+                    id={item.id}
+                    des={item.excerpt && item.excerpt.rendered}
+                    name={item.title && item.title.rendered}
+                  />
+                );
+              })}
           </div>
         </div>
       </div>
@@ -178,6 +187,7 @@ const Home = () => {
               toggle={toggle}
               text={"sodiq.akinjobi@gmail.com"}
               isImg={"yes"}
+              isMail={true}
               url={"https://www.youtube.com/"}
             />
           </div>
@@ -186,6 +196,7 @@ const Home = () => {
               toggle={toggle}
               text={"LinkedIn"}
               img={"link"}
+              isMail={true}
               url={"https://www.youtube.com/"}
             />
           </div>
@@ -194,6 +205,7 @@ const Home = () => {
               toggle={toggle}
               text={"Twitter"}
               img={"twit"}
+              isMail={true}
               url={"https://www.youtube.com/"}
             />
           </div>

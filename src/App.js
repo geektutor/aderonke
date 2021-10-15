@@ -1,4 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import BlogPost from "./compnents/blogPost";
 import ScrollToTop from "./compnents/scrollTop";
 import AllBlog from "./pages/allBlog";
 import Home from "./pages/home";
@@ -10,8 +11,8 @@ function App() {
       <Switch>
      
       
-        <div className="App">
-        <ScrollToTop />
+        <>
+          <ScrollToTop />
           <Route exact path="/">
             <Home />
           </Route>
@@ -22,7 +23,10 @@ function App() {
           <Route path="/works">
             <Work />
           </Route>
-        </div>
+          <Route path="/blog-post/:id">
+           <BlogPost/>
+          </Route>
+        </>
       </Switch>
     </BrowserRouter>
   );

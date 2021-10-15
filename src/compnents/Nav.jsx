@@ -20,9 +20,9 @@ const Nav = ({ handleToggle,other }) => {
         </button>
 
         <div  className="toggle">
-          <label class="switch2">
+          <label className="switch2">
             <input onClick={handleToggle} type="checkbox" />
-            <span class="slider2 round"></span>
+            <span className="slider2 round"></span>
           </label>
         </div>
       </div>

@@ -115,7 +115,7 @@ body {
       padding-bottom: 0px;
     }
 
-    p.first,
+    p.first,div.first
     p.second {
       font-weight: 700;
       width: 80%;
@@ -123,6 +123,9 @@ body {
       line-height: 49px;
       /* or 49px */
       color: $black;
+      img,figure{
+        display: none;
+      }
       @include mq(768px) {
         font-size: 15px;
         width: 100%;
