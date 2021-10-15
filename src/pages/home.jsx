@@ -42,7 +42,7 @@ const Home = () => {
               <a href="#about">Bio</a>
             </li>
             <li>
-              <a href="#work">work</a>
+              <a href="#work">Work</a>
             </li>
             <li>
               {" "}
@@ -60,11 +60,12 @@ const Home = () => {
           </ul>
         </div>
         <div className="prop">
+        I'm a Product Manager, Project Manager, Community Advocate, and WordPress <i>Babalawo</i>.<br>
           <ul className={`${toggle ? "bthemeT" : ""}`}>
-            <li>Project manager</li>
-            <li>Product manager</li>
-            <li>Community advocate</li>
-            <li>Wordpress babalawo</li>
+            <li>Project Manager</li>
+            <li>Product Manager</li>
+            <li>Community Advocate</li>
+            <li>Wordpress <i>Babalawo</i></li>
           </ul>
         </div>
       </div>
@@ -86,7 +87,7 @@ const Home = () => {
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
           You must be wondering, "Why Babalawo?" Well, I am quite good at what I
           do in the WordPress world, so much that my friends say it's
-          extraordinary. A Babalawo (the Yoruba word for a native doctor) has
+          extraordinary. A <i>Babalawo</i> (the Yoruba word for a native doctor) has
           special powers, hence the nickname.
         </p>
 
