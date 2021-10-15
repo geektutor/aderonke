@@ -1,0 +1,49 @@
+.drop-down-wrap {
+  position: relative;
+  // .drop-btn{
+  // }
+
+  .drop-down {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: $nav-shadow;
+    background-color: white;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.4s ease;
+
+    &.show-drop-down {
+      clip-path: inset(0 0 0 0);
+    }
+    @include mq(mobile) {
+      min-width: 120px;
+      right: 0;
+      left: unset;
+      transform: unset;
+    }
+    button,
+    a,
+    p {
+      width: 100%;
+      display: block;
+      color: color(primary);
+      margin-bottom: 0.7rem;
+      background-color: transparent;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 15px;
+      padding: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
