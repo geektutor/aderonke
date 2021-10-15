@@ -18,6 +18,11 @@ body {
     max-width: 1140px;
     margin: auto;
     padding-bottom: 67px;
+    &.extra{
+      @include mq(768px) {
+        padding-bottom: 40px;
+      }
+    }
     .intro {
       display: flex;
       align-items: center;
@@ -142,6 +147,11 @@ body {
     width: 100%;
     padding-top: 81px;
     padding-bottom: 139px;
+    &.extra{
+      @include mq(768px) {
+        padding-top: 20px;
+      }
+    }
     &.bg {
       background-color: #dedede;
     }
@@ -223,6 +233,11 @@ body {
     width: 100%;
     padding-top: 63px;
     padding-bottom: 78px;
+    &.extra{
+      @include mq(768px) {
+        padding-top: 20px;
+      }
+    }
    
     .coverBlog{
       width: 85%;

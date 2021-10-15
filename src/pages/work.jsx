@@ -29,7 +29,7 @@ const Work = () => {
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
       <Nav handleToggle={handleToggle} other={'true'} />
 
-      <div className="top">
+      <div className="top extra">
         <div className="intro">
           <div className="text">
             <h1 className={`${toggle ? "bthemeT" : ""}`}>My works</h1>
@@ -39,10 +39,10 @@ const Work = () => {
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="/#work">work</Link>
+              <Link to="#">work</Link>
             </li>
             <li>
-              <Link to="#">Blog</Link>
+              <Link to="/#blog">Blog</Link>
             </li>
             <li>
               <Link to="/#contact">Contact</Link>
@@ -57,7 +57,7 @@ const Work = () => {
         </div>
       </div>
 
-      <div id="work" className={`work ${toggle ? "bg" : ""}`}>
+      <div id="work" className={`work extra ${toggle ? "bg" : ""}`}>
         <div className="coverWork">
         
           <div className="workDiv">

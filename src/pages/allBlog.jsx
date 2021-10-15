@@ -28,7 +28,7 @@ const AllBlog = () => {
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
       <Nav handleToggle={handleToggle} other={'true'} />
 
-      <div className="top">
+      <div className="top extra">
         <div className="intro">
           <div className="text">
             <h1 className={`${toggle ? "bthemeT" : ""}`}>Blog</h1>
@@ -56,7 +56,7 @@ const AllBlog = () => {
         </div>
       </div>
 
-      <div id="blog" className={`blog ${toggle ? "bg" : ""}`}>
+      <div id="blog" className={`blog extra ${toggle ? "bg" : ""}`}>
         <div className="coverBlog">
           <div className="allBlog">
             {blog &&
