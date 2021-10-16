@@ -40,7 +40,7 @@ const BlogPost = () => {
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="/#work">work</Link>
+              <Link to="/#work">Work</Link>
             </li>
             <li>
               <Link to="#">Blog</Link>
@@ -68,8 +68,8 @@ const BlogPost = () => {
                   <>
                   <div className="pic">
                   <img
-                    src="https://ik.imagekit.io/uknntomzctt/Geek/72_3Zoey6oME.png?updatedAt=1634217017945"
-                    alt="Geek"
+                    src={blog.acf.length ? blog.acf.images:'https://ik.imagekit.io/uknntomzctt/dariusz-sankowski-3OiYMgDKJ6k-unsplash_M-Dvj93YgI.jpg?updatedAt=1634378053467'}
+                    alt="icon"
                   />
                 </div>
                 {/* des={item.excerpt && item.excerpt.rendered}

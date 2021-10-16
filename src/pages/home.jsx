@@ -42,7 +42,7 @@ const Home = () => {
               <a href="#about">Bio</a>
             </li>
             <li>
-              <a href="#work">work</a>
+              <a href="#work">Work</a>
             </li>
             <li>
               {" "}
@@ -61,10 +61,10 @@ const Home = () => {
         </div>
         <div className="prop">
           <ul className={`${toggle ? "bthemeT" : ""}`}>
-            <li>Project manager</li>
-            <li>Product manager</li>
-            <li>Community advocate</li>
-            <li>Wordpress babalawo</li>
+            <li>Project Manager</li>
+            <li>Product Manager</li>
+            <li>Community Advocate</li>
+            <li>WordPress Babalawo</li>
           </ul>
         </div>
       </div>
@@ -94,7 +94,8 @@ const Home = () => {
           <LinkTo
             text={"My resume"}
             toggle={toggle}
-            url={"https://www.youtube.com/"}
+            isMail={true}
+            url={"https://api.geektutor.xyz/resume"}
           />
         </div>
       </div>

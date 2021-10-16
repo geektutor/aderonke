@@ -37,7 +37,7 @@ const Nav = ({ handleToggle,other }) => {
 
        <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
 
-         <Link to="/#work">work</Link>
+         <Link to="/#work">Work</Link>
        </li>
        <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
        
@@ -53,7 +53,7 @@ const Nav = ({ handleToggle,other }) => {
           </li>
 
           <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
-            <a href="#work">work</a>
+            <a href="#work">Work</a>
           </li>
           <li onClick={() => setisNavOpen(!isNavOpen)} className="nav_link">
             <a href="#blog">Blog</a>

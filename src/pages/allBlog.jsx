@@ -38,7 +38,7 @@ const AllBlog = () => {
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="/#work">work</Link>
+              <Link to="/#work">Work</Link>
             </li>
             <li>
               <Link to="#">Blog</Link>
@@ -67,6 +67,7 @@ const AllBlog = () => {
                     des={item.excerpt && item.excerpt.rendered}
                     name={item.title && item.title.rendered}
                     id={item.id}
+                    img={item.acf.length && item.acf.images}
                   />
                 );
               })}

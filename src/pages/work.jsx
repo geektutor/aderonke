@@ -7,18 +7,18 @@ import "../css/home.css";
 
 const Work = () => {
   const [toggle, setToggle] = useState(false);
-  const [blog, setBlog] = useState([]);
-  console.log(blog);
+  const [work, setWork] = useState([]);
+  console.log(work);
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   useEffect(() => {
-    fetch("https://api.geektutor.xyz/wp-json/wp/v2/posts")
+    fetch("https://api.geektutor.xyz/wp-json/wp/v2/works")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setBlog(data);
+        setWork(data);
       })
       .catch((err) => {
         console.log(err);
@@ -39,7 +39,7 @@ const Work = () => {
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="#">work</Link>
+              <Link to="#">Work</Link>
             </li>
             <li>
               <Link to="/#blog">Blog</Link>
@@ -61,23 +61,23 @@ const Work = () => {
         <div className="coverWork">
         
           <div className="workDiv">
-            
-            <EachWork
-              toggle={toggle}
-              title={"Kuizu"}
-              text={
-                "orem Ipsom Idolor nes i don’t know what I’m flipping typing butI need placeholder text so I just have to keep going.This issomewhat like a second paragraph, you know"
-              }
-              url={"https://www.youtube.com/"}
-            />
-            <EachWork
-              toggle={toggle}
-              title={"Kuizu"}
-              text={
-                "orem Ipsom Idolor nes i don’t know what I’m flipping typing butI need placeholder text so I just have to keep going.This issomewhat like a second paragraph, you know"
-              }
-              url={"https://www.youtube.com/"}
-            />
+            {
+              work && work.map((item)=>{
+                return(
+                  <EachWork
+                  toggle={toggle}
+                  title={item.title.rendered}
+                  text={
+                    item.content.rendered
+                  }
+                  img={item.acf.images}
+                  url={item.acf.link}
+                />
+                )
+               
+              })
+            }
+         
           </div>
         </div>
       </div>

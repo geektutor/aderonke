@@ -1,6 +1,6 @@
 import LinkTo from "./linkTo";
 
-const OneBlog = ({name,des,id}) => {
+const OneBlog = ({name,des,id,img}) => {
     function truncateString(str, num) {
         // If the length of str is less than or equal to num
         // just return str--don't truncate it.
@@ -12,7 +12,7 @@ const OneBlog = ({name,des,id}) => {
       }
     return (
         <div className="oneBlog">
-              <div className="imgBox"></div>
+              <div  style={{backgroundImage:`url(${img?img:'https://ik.imagekit.io/uknntomzctt/dariusz-sankowski-3OiYMgDKJ6k-unsplash_M-Dvj93YgI.jpg?updatedAt=1634378053467'})`}} className="imgBox"></div>
               <div className="textSide">
                 <p className="name">{name}</p>
                 {/* <p className="description">
