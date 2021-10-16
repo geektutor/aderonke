@@ -186,6 +186,7 @@ const Home = () => {
                     id={item.id}
                     des={item.excerpt && item.excerpt.rendered}
                     name={item.title && item.title.rendered}
+                    img={item.acf.length && item.acf.images}
                   />
                 );
               })}
