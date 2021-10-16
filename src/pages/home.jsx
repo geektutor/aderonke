@@ -64,7 +64,7 @@ const Home = () => {
             <li>Project Manager</li>
             <li>Product Manager</li>
             <li>Community Advocate</li>
-            <li>WordPress Babalawo</li>
+            <li>Wordpress <i>Babalawo</i></li>
           </ul>
         </div>
       </div>
@@ -84,9 +84,9 @@ const Home = () => {
           community advocate.
         </p>
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          You must be wondering, "Why Babalawo?" Well, I am quite good at what I
+          You must be wondering, "Why <i>Babalawo?</i>" Well, I am quite good at what I
           do in the WordPress world, so much that my friends say it's
-          extraordinary. A Babalawo (the Yoruba word for a native doctor) has
+          extraordinary. A <i>Babalawo</i> (the Yoruba word for a native doctor) has
           special powers, hence the nickname.
         </p>
 
@@ -99,7 +99,32 @@ const Home = () => {
           />
         </div>
       </div>
+      
+<div className="about">
+        <h2 className={`topic ${toggle ? "bthemeT" : ""}`}>Experience</h2>
+        <p className={`first ${toggle ? "bthemeT" : ""}`}>
+          It started from the days I used to play with Wapka, Webs and similar
+          sites. I started geeking with HTML, CSS, and PHP in 2012 and then
+          WordPress in 2013. I did that for a while, working individually or
+          within a team to create beautiful websites, helping people to bring
+          their idea to a reality using digital products.
+        </p>
+        <p className={`first ${toggle ? "bthemeT" : ""}`}>
+          In 2021, I transitioned fully into Product Management, after
+          practising as a rookie PM for a few years. I took a couple of courses
+          , including a ProductDive PM Course.
+        </p>
 
+        <p className={`first ${toggle ? "bthemeT" : ""}`}>
+          I am passionate about tech, community, and education. I have
+          demonstrated this in various capacities: Co-organizer of WordPress
+          Lagos Meetup Group, Lead of the Google Developer Student Club, UNILAG
+          (2019-2020), where I increased club membership by over 2k people,
+          Chairman of the Engineering Career Expo, and other roles I have taken
+          up and executed excellently.
+        </p>
+      </div>
+      
       <div id="work" className={`work ${toggle ? "bg" : ""}`}>
         <div className="coverWork">
           <div className="heading">
@@ -127,31 +152,6 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
-
-      <div className="about">
-        <h2 className={`topic ${toggle ? "bthemeT" : ""}`}>Experience</h2>
-        <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          It started from the days I used to play with Wapka, Webs and similar
-          sites. I started geeking with HTML, CSS, and PHP in 2012 and then
-          WordPress in 2013. I did that for a while, working individually or
-          within a team to create beautiful websites, helping people to bring
-          their idea to a reality using digital products.
-        </p>
-        <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          In 2021, I transitioned fully into Product Management, after
-          practising as a rookie PM for a few years. I took a couple of courses
-          , including a ProductDive PM Course.
-        </p>
-
-        <p className={`first ${toggle ? "bthemeT" : ""}`}>
-          I am passionate about tech, community, and education. I have
-          demonstrated this in various capacities: Co-organizer of WordPress
-          Lagos Meetup Group, Lead of the Google Developer Student Club, UNILAG
-          (2019-2020), where I increased club membership by over 2k people,
-          Chairman of the Engineering Career Expo, and other roles I have taken
-          up and executed excellently.
-        </p>
       </div>
 
       <div id="blog" className={`blog ${toggle ? "bg" : ""}`}>
