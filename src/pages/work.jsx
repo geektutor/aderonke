@@ -70,7 +70,7 @@ const Work = () => {
                   text={
                     item.content.rendered
                   }
-                  img={item.acf.images}
+                  img={item.acf.length && item.acf.images}
                   url={item.acf.link}
                 />
                 )

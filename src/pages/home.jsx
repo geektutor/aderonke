@@ -26,6 +26,20 @@ const Home = () => {
       });
   }, []);
 
+  const [work, setWork] = useState([]);
+  console.log(work);
+  useEffect(() => {
+    fetch("https://api.geektutor.xyz/wp-json/wp/v2/works")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setWork(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
       <Nav handleToggle={handleToggle} />
@@ -134,22 +148,22 @@ const Home = () => {
             </Link>
           </div>
           <div className="workDiv">
-            <EachWork
-              toggle={toggle}
-              title={"Kuizu"}
-              text={
-                "Kuizu is an Anime quiz app for Otakus. I was the Product Manager for this app. I was responsible for assigning tasks to teams, getting people to partake in a survey and contribute to a question bank, and ensuring that things were up and ready in time for the launch."
-              }
-              url={"https://www.youtube.com/"}
-            />
-            <EachWork
-              toggle={toggle}
-              title={"Kuizu"}
-              text={
-                "Kuizu is an Anime quiz app for Otakus. I was the Product Manager for this app. I was responsible for assigning tasks to teams, getting people to partake in a survey and contribute to a question bank, and ensuring that things were up and ready in time for the launch."
-              }
-              url={"https://www.youtube.com/"}
-            />
+          {
+              work && work.map((item)=>{
+                return(
+                  <EachWork
+                  toggle={toggle}
+                  title={item.title.rendered}
+                  text={
+                    item.content.rendered
+                  }
+                  img={item.acf.length && item.acf.images}
+                  url={item.acf.link}
+                />
+                )
+               
+              })
+            }
           </div>
         </div>
       </div>

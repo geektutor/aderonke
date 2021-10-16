@@ -22,7 +22,7 @@ const EachWork = ({title,text,url,toggle,img}) => {
       </p> */}
       <p className="aboutT" dangerouslySetInnerHTML={{__html: text && truncateString(text,108)}} />
                 
-      <LinkTo toggle={'grey'} text={"Check site"} url={url} />
+      <LinkTo toggle={'grey'} isMail={true} text={"Check site"} url={url} />
     </div>
   );
 };
