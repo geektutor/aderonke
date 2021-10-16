@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
 import OneBlog from "../compnents/oneBlog";
 import "../css/home.css";
@@ -7,7 +8,7 @@ import "../css/home.css";
 const AllBlog = () => {
   const [toggle, setToggle] = useState(false);
   const [blog, setBlog] = useState([]);
-  console.log(blog);
+  const [isPending, setIsPending] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -18,6 +19,7 @@ const AllBlog = () => {
       .then((data) => {
         console.log(data);
         setBlog(data);
+        setIsPending(true)
       })
       .catch((err) => {
         console.log(err);
@@ -26,6 +28,8 @@ const AllBlog = () => {
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
+       <Loader close={!isPending}/>
+      
       <Nav handleToggle={handleToggle} other={'true'} />
 
       <div className="top extra">

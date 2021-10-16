@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import EachWork from "../compnents/eachWork";
 import LinkTo from "../compnents/linkTo";
+import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
 import OneBlog from "../compnents/oneBlog";
 import "../css/home.css";
@@ -9,6 +10,7 @@ import "../css/home.css";
 const Home = () => {
   const [toggle, setToggle] = useState(false);
   const [blog, setBlog] = useState([]);
+  const [isPending, setIsPending] = useState(false);
   console.log(blog);
   const handleToggle = () => {
     setToggle(!toggle);
@@ -20,6 +22,7 @@ const Home = () => {
       .then((data) => {
         console.log(data);
         setBlog(data?.filter((val, i) => i <= 2));
+        setIsPending(true)
       })
       .catch((err) => {
         console.log(err);
@@ -42,8 +45,11 @@ const Home = () => {
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
-      <Nav handleToggle={handleToggle} />
+         <Loader close={!isPending}/>
+        
+         
 
+      <Nav handleToggle={handleToggle} />
       <div className="top">
         <div className="intro">
           <div className="text">
@@ -152,7 +158,7 @@ const Home = () => {
           sites. I started geeking with HTML, CSS, and PHP in 2012 and then
           WordPress in 2013. I did that for a while, working individually or
           within a team to create beautiful websites, helping people to bring
-          their idea to a reality using digital products.
+          their idea to a reality using digital products
         </p>
         <p className={`first ${toggle ? "bthemeT" : ""}`}>
           In 2021, I transitioned fully into Product Management, after

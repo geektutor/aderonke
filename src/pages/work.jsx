@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import EachWork from "../compnents/eachWork";
+import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
 
 import "../css/home.css";
@@ -8,7 +9,7 @@ import "../css/home.css";
 const Work = () => {
   const [toggle, setToggle] = useState(false);
   const [work, setWork] = useState([]);
-  console.log(work);
+  const [isPending, setIsPending] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -19,6 +20,7 @@ const Work = () => {
       .then((data) => {
         console.log(data);
         setWork(data);
+        setIsPending(true)
       })
       .catch((err) => {
         console.log(err);
@@ -27,6 +29,8 @@ const Work = () => {
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
+        <Loader close={!isPending}/>
+      
       <Nav handleToggle={handleToggle} other={'true'} />
 
       <div className="top extra">

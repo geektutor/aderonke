@@ -4,10 +4,12 @@ import { useParams } from "react-router";
 import { HashLink as Link } from "react-router-hash-link";
 import Nav from "../compnents/Nav";
 import "../css/home.css";
+import Loader from "./Loader";
 
 const BlogPost = () => {
   const [toggle, setToggle] = useState(false);
   const [blog, setBlog] = useState(null);
+  const [isPending, setIsPending] = useState(false);
   console.log(blog);
   const handleToggle = () => {
     setToggle(!toggle);
@@ -20,14 +22,18 @@ const BlogPost = () => {
       .then((data) => {
         console.log(data);
         setBlog(data);
+        setIsPending(true)
       })
       .catch((err) => {
         console.log(err);
+        setIsPending(true)
       });
   }, []);
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
+        <Loader close={!isPending}/>
+    
       <Nav handleToggle={handleToggle} other={"true"} />
 
       <div className="top extra">
