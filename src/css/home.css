@@ -742,6 +742,8 @@ p.second.bthemeT {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -759,6 +761,13 @@ p.second.bthemeT {
 
 .pd-home .work .coverWork .workDiv .eachWork {
   width: 47%;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .work .coverWork .workDiv .eachWork {
+    width: 100%;
+  }
 }
 
 .pd-home .work .coverWork .workDiv .eachWork .imageDiv {
@@ -780,12 +789,14 @@ p.second.bthemeT {
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 15px;
+  height: 100px;
   color: #1A1A1A;
 }
 
 @media screen and (max-width: 768px) {
   .pd-home .work .coverWork .workDiv .eachWork .title {
     font-size: 20px;
+    height: unset;
   }
 }
 
@@ -1116,7 +1127,6 @@ input:checked + .slider2:before {
     line-height: 30px;
   }
 }
-
 
 
 /* preloader */

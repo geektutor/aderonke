@@ -38,7 +38,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setWork(data);
+        setWork(data?.filter((val, i) => i <= 2));
       })
       .catch((err) => {
         console.log(err);
@@ -136,15 +136,15 @@ const Home = () => {
           {
               work && work.map((item)=>{
                 return(
-                  <EachWork
-                  toggle={toggle}
-                  title={item.title.rendered}
-                  text={
-                    item.content.rendered
-                  }
-                  img={item.acf.length && item.acf.images}
-                  url={item.acf.link}
-                />
+                    <EachWork
+                    toggle={toggle}
+                    title={item.acf && item.acf.title}
+                    text={
+                      item.acf.description
+                    }
+                    img={item.acf.images}
+                    url={item.acf.link}
+                  />
                 )
                
               })

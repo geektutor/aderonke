@@ -70,14 +70,14 @@ const Work = () => {
               work && work.map((item)=>{
                 return(
                   <EachWork
-                  toggle={toggle}
-                  title={item.title.rendered}
-                  text={
-                    item.content.rendered
-                  }
-                  img={item.acf.length && item.acf.images}
-                  url={item.acf.link}
-                />
+                    toggle={toggle}
+                    title={item.acf && item.acf.title}
+                    text={
+                      item.acf.description
+                    }
+                    img={item.acf.images}
+                    url={item.acf.link}
+                  />
                 )
                
               })
