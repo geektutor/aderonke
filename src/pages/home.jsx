@@ -11,6 +11,7 @@ const Home = () => {
   const [toggle, setToggle] = useState(false);
   const [blog, setBlog] = useState([]);
   const [isPending, setIsPending] = useState(false);
+  console.log(isPending)
   console.log(blog);
   const handleToggle = () => {
     setToggle(!toggle);
