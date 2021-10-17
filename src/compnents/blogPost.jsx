@@ -46,7 +46,7 @@ const BlogPost = () => {
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="/#work">Work</Link>
+              <Link to="/#work">Projects</Link>
             </li>
             <li>
               <Link to="#">Blog</Link>

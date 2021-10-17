@@ -36,14 +36,14 @@ const Work = () => {
       <div className="top extra">
         <div className="intro">
           <div className="text">
-            <h1 className={`${toggle ? "bthemeT" : ""}`}>My works</h1>
+            <h1 className={`${toggle ? "bthemeT" : ""}`}>My Projects</h1>
           </div>
           <ul className={`${toggle ? "bthemeT" : ""}`}>
             <li>
               <Link to="/#about">Bio</Link>
             </li>
             <li>
-              <Link to="#">Work</Link>
+              <Link to="#">Project</Link>
             </li>
             <li>
               <Link to="/#blog">Blog</Link>

@@ -62,7 +62,7 @@ const Home = () => {
               <a href="#about">Bio</a>
             </li>
             <li>
-              <a href="#work">Work</a>
+              <a href="#work">Project</a>
             </li>
             <li>
               {" "}
@@ -125,7 +125,7 @@ const Home = () => {
       <div id="work" className={`work ${toggle ? "bg" : ""}`}>
         <div className="coverWork">
           <div className="heading">
-            <h2 className={`topic`}>My works</h2>
+            <h2 className={`topic`}>My Projects</h2>
             <Link to="/works" className="see">
               See all
             </Link>
