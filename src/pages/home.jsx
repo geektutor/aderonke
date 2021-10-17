@@ -27,6 +27,7 @@ const Home = () => {
       })
       .catch((err) => {
         console.log(err);
+        setIsPending(true)
       });
   }, []);
 
