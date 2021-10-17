@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
-         <Loader close={!isPending}/>
+         <Loader close={isPending}/>
         
          
 

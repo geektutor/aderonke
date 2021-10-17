@@ -23,12 +23,13 @@ const AllBlog = () => {
       })
       .catch((err) => {
         console.log(err);
+        setIsPending(true)
       });
   }, []);
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
-       <Loader close={!isPending}/>
+       <Loader close={isPending}/>
       
       <Nav handleToggle={handleToggle} other={'true'} />
 
