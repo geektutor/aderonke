@@ -3,6 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import EachWork from "../compnents/eachWork";
 import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
+import { setTheme } from "../compnents/theme";
 
 import "../css/home.css";
 
@@ -10,15 +11,31 @@ const Work = () => {
   const [toggle, setToggle] = useState(true);
   const [work, setWork] = useState([]);
   const [isPending, setIsPending] = useState(false);
+  let theme = localStorage.getItem('theme');
   const handleToggle = () => {
-    setToggle(!toggle);
+
+    if (localStorage.getItem('theme') === 'true') {
+      setTheme(false);
+      setToggle(false)
+  } else {
+    setTheme(true);
+    setToggle(true)
+  }
   };
+  
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'true') {
+      setToggle(true)
+    } else if (localStorage.getItem('theme') === 'false') {
+      setToggle(false)
+    }
+}, [theme])
 
   useEffect(() => {
     fetch("https://api.geektutor.xyz/wp-json/wp/v2/works")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+      
         setWork(data);
         setIsPending(true)
       })
@@ -32,7 +49,7 @@ const Work = () => {
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
         <Loader close={isPending}/>
       
-      <Nav handleToggle={handleToggle} other={'true'} />
+      <Nav check={toggle} handleToggle={handleToggle} other={'true'} />
 
       <div className="top extra">
         <div className="intro">

@@ -3,21 +3,38 @@ import { HashLink as Link } from "react-router-hash-link";
 import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
 import OneBlog from "../compnents/oneBlog";
+import { setTheme } from "../compnents/theme";
 import "../css/home.css";
 
 const AllBlog = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [blog, setBlog] = useState([]);
   const [isPending, setIsPending] = useState(false);
+  let theme = localStorage.getItem('theme');
   const handleToggle = () => {
-    setToggle(!toggle);
+   
+    if (localStorage.getItem('theme') === 'true') {
+      setTheme(false);
+      setToggle(false)
+  } else {
+    setTheme(true);
+    setToggle(true)
+  }
   };
+  
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'true') {
+      setToggle(true)
+    } else if (localStorage.getItem('theme') === 'false') {
+      setToggle(false)
+    }
+}, [theme])
 
   useEffect(() => {
     fetch("https://api.geektutor.xyz/wp-json/wp/v2/posts")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+      
         setBlog(data);
         setIsPending(true)
       })
@@ -31,7 +48,7 @@ const AllBlog = () => {
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
        <Loader close={isPending}/>
       
-      <Nav handleToggle={handleToggle} other={'true'} />
+      <Nav check={toggle} handleToggle={handleToggle} other={'true'} />
 
       <div className="top extra">
         <div className="intro">
@@ -53,7 +70,7 @@ const AllBlog = () => {
             </li>
             <li>
               <label class="switch">
-                <input onClick={handleToggle} type="checkbox" />
+                <input onClick={handleToggle} checked={toggle} type="checkbox" />
                 <span class="slider round"></span>
               </label>
             </li>

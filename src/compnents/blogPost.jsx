@@ -7,7 +7,7 @@ import "../css/home.css";
 import Loader from "./Loader";
 
 const BlogPost = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [blog, setBlog] = useState(null);
   const [isPending, setIsPending] = useState(false);
   console.log(blog);
@@ -29,6 +29,7 @@ const BlogPost = () => {
         setIsPending(true)
       });
   }, []);
+  
 
   return (
     <div className={`pd-home ${toggle ? "btheme" : ""}`}>
@@ -56,7 +57,7 @@ const BlogPost = () => {
             </li>
             <li>
               <label className="switch">
-                <input onClick={handleToggle} type="checkbox" />
+                <input onClick={handleToggle} checked={toggle} type="checkbox" />
                 <span className="slider round"></span>
               </label>
             </li>

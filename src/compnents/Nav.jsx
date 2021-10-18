@@ -4,7 +4,7 @@ import menu from "../assets/images/menu.png";
 import { HashLink as Link } from "react-router-hash-link";
 import { useState } from "react";
 
-const Nav = ({ handleToggle,other }) => {
+const Nav = ({ handleToggle,other,check }) => {
   const [isNavOpen, setisNavOpen] = useState(false);
 
   return (
@@ -21,7 +21,7 @@ const Nav = ({ handleToggle,other }) => {
 
         <div  className="toggle">
           <label className="switch2">
-            <input onClick={handleToggle} type="checkbox" />
+            <input checked={check} onClick={handleToggle} type="checkbox" />
             <span className="slider2 round"></span>
           </label>
         </div>

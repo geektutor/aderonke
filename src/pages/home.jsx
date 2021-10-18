@@ -5,23 +5,43 @@ import LinkTo from "../compnents/linkTo";
 import Loader from "../compnents/Loader";
 import Nav from "../compnents/Nav";
 import OneBlog from "../compnents/oneBlog";
+import { setTheme } from "../compnents/theme";
 import "../css/home.css";
 
 const Home = () => {
   const [toggle, setToggle] = useState(true);
   const [blog, setBlog] = useState([]);
   const [isPending, setIsPending] = useState(false);
-  console.log(isPending)
-  console.log(blog);
+  let theme = localStorage.getItem('theme');
   const handleToggle = () => {
-    setToggle(!toggle);
+
+    if (localStorage.getItem('theme') === 'true') {
+      setTheme(false);
+      setToggle(false)
+  } else {
+    setTheme(true);
+    setToggle(true)
+  }
   };
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'true') {
+      setToggle(true)
+    } else if (localStorage.getItem('theme') === 'false') {
+      setToggle(false)
+    }
+}, [theme])
+
+
+
+
+
+
 
   useEffect(() => {
     fetch("https://api.geektutor.xyz/wp-json/wp/v2/posts")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setBlog(data?.filter((val, i) => i <= 2));
         setIsPending(true)
       })
@@ -32,16 +52,14 @@ const Home = () => {
   }, []);
 
   const [work, setWork] = useState([]);
-  console.log(work);
+
   useEffect(() => {
     fetch("https://api.geektutor.xyz/wp-json/wp/v2/works")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        let newData = data.filter((item)=>{
-          return item.data_category[0]===72
-        })
-        console.log(newData)
+      
+      
+      
         setWork(data);
       })
       .catch((err) => {
@@ -55,7 +73,7 @@ const Home = () => {
         
          
 
-      <Nav handleToggle={handleToggle} />
+      <Nav check={toggle} handleToggle={handleToggle} />
       <div className="top">
         <div className="intro">
           <div className="text">

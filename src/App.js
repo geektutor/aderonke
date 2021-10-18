@@ -1,17 +1,20 @@
+import { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import BlogPost from "./compnents/blogPost";
 import ScrollToTop from "./compnents/scrollTop";
+import { keepTheme } from "./compnents/theme";
 import AllBlog from "./pages/allBlog";
 import Contribute from "./pages/contribute";
 import Home from "./pages/home";
 import Work from "./pages/work";
 
 function App() {
+  useEffect(() => {
+    keepTheme();
+  });
   return (
     <BrowserRouter>
       <Switch>
-     
-      
         <>
           <ScrollToTop />
           <Route exact path="/">
@@ -25,11 +28,10 @@ function App() {
             <Work />
           </Route>
           <Route path="/contribute">
-       
-            <Contribute/>
+            <Contribute />
           </Route>
           <Route path="/blog-post/:id">
-           <BlogPost/>
+            <BlogPost />
           </Route>
         </>
       </Switch>
