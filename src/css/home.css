@@ -701,6 +701,7 @@ p.second.bthemeT {
   width: 85%;
   margin: auto;
   max-width: 1140px;
+  margin-bottom: 30px;
 }
 
 .pd-home .work .coverWork .heading {
@@ -761,7 +762,7 @@ p.second.bthemeT {
 
 .pd-home .work .coverWork .workDiv .eachWork {
   width: 47%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1127,7 +1128,6 @@ input:checked + .slider2:before {
     line-height: 30px;
   }
 }
-
 
 /* preloader */
 .pre-loader {

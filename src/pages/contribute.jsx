@@ -6,7 +6,7 @@ import Nav from "../compnents/Nav";
 
 import "../css/home.css";
 
-const Work = () => {
+const Contribute = () => {
   const [toggle, setToggle] = useState(true);
   const [work, setWork] = useState([]);
   const [isPending, setIsPending] = useState(false);
@@ -37,7 +37,7 @@ const Work = () => {
       <div className="top extra">
         <div className="intro">
           <div className="text">
-            <h1 className={`${toggle ? "bthemeT" : ""}`}>My Projects</h1>
+            <h1 className={`${toggle ? "bthemeT" : ""}`}>My Contributions</h1>
           </div>
           <ul className={`${toggle ? "bthemeT" : ""}`}>
             <li>
@@ -54,7 +54,7 @@ const Work = () => {
             </li>
             <li>
               <label class="switch">
-                <input onClick={handleToggle} checked={toggle} type="checkbox" />
+                <input checked={toggle} onClick={handleToggle} type="checkbox" />
                 <span class="slider round"></span>
               </label>
             </li>
@@ -68,7 +68,7 @@ const Work = () => {
           <div className="workDiv">
           {
               work && work.filter((item)=>{
-                return item.data_category[0]===72
+                return item.data_category[0]===73
               }).map((item)=>{
                 return(
                     <EachWork
@@ -92,4 +92,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Contribute;

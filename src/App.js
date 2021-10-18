@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import BlogPost from "./compnents/blogPost";
 import ScrollToTop from "./compnents/scrollTop";
 import AllBlog from "./pages/allBlog";
+import Contribute from "./pages/contribute";
 import Home from "./pages/home";
 import Work from "./pages/work";
 
@@ -22,6 +23,10 @@ function App() {
           </Route>
           <Route path="/works">
             <Work />
+          </Route>
+          <Route path="/contribute">
+       
+            <Contribute/>
           </Route>
           <Route path="/blog-post/:id">
            <BlogPost/>

@@ -162,6 +162,7 @@ body {
       width: 85%;
       margin: auto;
       max-width: 1140px;
+      margin-bottom: 30px;
       .heading{
         display: flex;
         justify-content: space-between;
@@ -195,7 +196,7 @@ body {
         }
         .eachWork {
           width: 47%;
-          margin-bottom: 25px;
+          margin-bottom: 35px;
           @include mq(768px) {
             width: 100%;
           }

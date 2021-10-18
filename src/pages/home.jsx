@@ -8,7 +8,7 @@ import OneBlog from "../compnents/oneBlog";
 import "../css/home.css";
 
 const Home = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [blog, setBlog] = useState([]);
   const [isPending, setIsPending] = useState(false);
   console.log(isPending)
@@ -38,7 +38,11 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setWork(data?.filter((val, i) => i <= 2));
+        let newData = data.filter((item)=>{
+          return item.data_category[0]===72
+        })
+        console.log(newData)
+        setWork(data);
       })
       .catch((err) => {
         console.log(err);
@@ -75,7 +79,7 @@ const Home = () => {
             </li>
             <li>
               <label class="switch">
-                <input onClick={handleToggle} type="checkbox" />
+                <input onClick={handleToggle} checked={toggle} type="checkbox" />
                 <span class="slider round"></span>
               </label>
             </li>
@@ -134,7 +138,41 @@ const Home = () => {
           </div>
           <div className="workDiv">
           {
-              work && work.map((item)=>{
+              work && work.filter((item)=>{
+                return item.data_category[0]===72
+              }).filter((item,i)=>{
+                return i <= 1
+              }).map((item)=>{
+                return(
+                    <EachWork
+                    toggle={toggle}
+                    title={item.acf && item.acf.title}
+                    text={
+                      item.acf.description
+                    }
+                    img={item.acf.images}
+                    url={item.acf.link}
+                  />
+                )
+               
+              })
+            }
+          </div>
+        </div>
+        <div className="coverWork">
+          <div className="heading">
+            <h2 className={`topic`}>My Contributions</h2>
+            <Link to="/contribute" className="see">
+              See all
+            </Link>
+          </div>
+          <div className="workDiv">
+          {
+              work && work.filter((item)=>{
+                return item.data_category[0]===73
+              }).filter((item,i)=>{
+                return i <= 1
+              }).map((item)=>{
                 return(
                     <EachWork
                     toggle={toggle}
