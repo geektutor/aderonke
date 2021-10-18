@@ -20,7 +20,7 @@ const EachWork = ({title,text,url,toggle,img}) => {
       {/* <p className="aboutT">
        {text}
       </p> */}
-      <p className="aboutT" dangerouslySetInnerHTML={{__html: text && truncateString(text,108)}} />
+      <p className="aboutT" dangerouslySetInnerHTML={{__html: text && truncateString(text,78)}} />
                 
       <LinkTo toggle={'grey'} isMail={true} text={"Check site"} url={url} />
     </div>

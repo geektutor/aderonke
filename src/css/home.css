@@ -23,16 +23,16 @@ button {
 
 .topic {
   font-weight: bold;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 106.9%;
   /* or 80px */
   color: #0b0b0b;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .topic {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -90,16 +90,16 @@ button {
 
 .topic {
   font-weight: bold;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 106.9%;
   /* or 80px */
   color: #0b0b0b;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .topic {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -487,9 +487,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .pd-home {
-  padding-top: 116px;
+  padding-top: 50px;
   background-color: white;
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home {
+    padding-top: 88px;
+  }
 }
 
 .pd-home.btheme {
@@ -501,6 +507,12 @@ body::-webkit-scrollbar-thumb {
   max-width: 1140px;
   margin: auto;
   padding-bottom: 67px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .top {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -524,7 +536,7 @@ body::-webkit-scrollbar-thumb {
 
 .pd-home .top .intro .text h1 {
   font-weight: bold;
-  font-size: 75px;
+  font-size: 65px;
   line-height: 106.9%;
   color: #000000;
 }
@@ -569,7 +581,7 @@ body::-webkit-scrollbar-thumb {
   list-style-type: none;
   text-align: right;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 17px;
 }
 
@@ -578,7 +590,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .pd-home .top .prop {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .pd-home .top .prop ul {
@@ -592,7 +604,7 @@ body::-webkit-scrollbar-thumb {
 .pd-home .top .prop ul li {
   list-style-type: none;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 18px;
   line-height: 106.9%;
   margin-bottom: 19px;
 }
@@ -624,23 +636,23 @@ body::-webkit-scrollbar-thumb {
 
 .pd-home .about {
   margin: auto;
-  margin-top: 110px;
+  margin-top: 50px;
   width: 85%;
   max-width: 1140px;
-  padding-bottom: 135px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
   .pd-home .about {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 }
 
 .pd-home .about p.first, .pd-home .about div.first
 p.second {
   font-weight: 700;
-  width: 80%;
-  font-size: 24px;
+  width: 95%;
+  font-size: 18px;
   line-height: 49px;
   /* or 49px */
   color: #1A1A1A;
@@ -655,7 +667,7 @@ p.second figure {
 @media screen and (max-width: 768px) {
   .pd-home .about p.first, .pd-home .about div.first
 p.second {
-    font-size: 15px;
+    font-size: 14px;
     width: 100%;
     line-height: 30px;
   }
@@ -667,12 +679,12 @@ p.second.bthemeT {
 }
 
 .pd-home .about p.first {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
 
 .pd-home .about .resume {
   width: 200px;
-  margin-top: 57px;
+  margin-top: 27px;
 }
 
 @media screen and (max-width: 768px) {
@@ -683,8 +695,8 @@ p.second.bthemeT {
 
 .pd-home .work {
   width: 100%;
-  padding-top: 81px;
-  padding-bottom: 139px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -714,7 +726,7 @@ p.second.bthemeT {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 69px;
+  margin-bottom: 39px;
 }
 
 @media screen and (max-width: 768px) {
@@ -730,7 +742,7 @@ p.second.bthemeT {
 
 .pd-home .work .coverWork .heading .see {
   color: #D00000;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -777,7 +789,7 @@ p.second.bthemeT {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -788,9 +800,9 @@ p.second.bthemeT {
 
 .pd-home .work .coverWork .workDiv .eachWork .title {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 25px;
   margin-bottom: 15px;
-  height: 100px;
+  height: 40px;
   color: #1A1A1A;
 }
 
@@ -803,14 +815,14 @@ p.second.bthemeT {
 
 .pd-home .work .coverWork .workDiv .eachWork .aboutT {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 39px;
   margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
   .pd-home .work .coverWork .workDiv .eachWork .aboutT {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 29px;
   }
 }
@@ -818,14 +830,14 @@ p.second.bthemeT {
 @media screen and (max-width: 768px) {
   .pd-home .work .coverWork .workDiv .eachWork {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
   }
 }
 
 .pd-home .blog {
   width: 100%;
-  padding-top: 63px;
-  padding-bottom: 78px;
+  padding-top: 20px;
+  padding-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -851,7 +863,7 @@ p.second.bthemeT {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 69px;
+  margin-bottom: 39px;
 }
 
 @media screen and (max-width: 768px) {
@@ -867,7 +879,7 @@ p.second.bthemeT {
 
 .pd-home .blog .coverBlog .heading .see {
   color: #D00000;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -929,7 +941,7 @@ p.second.bthemeT {
 }
 
 .linkTo .tt {
-  font-size: 30px;
+  font-size: 20px;
   color: #D00000;
   font-weight: 300;
 }
@@ -949,7 +961,7 @@ p.second.bthemeT {
 }
 
 .linkTo img {
-  width: 36px;
+  width: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1059,13 +1071,13 @@ input:checked + .slider2:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
 .oneBlog .imgBox {
   width: 48%;
-  height: 350px;
+  height: 288px;
   background-color: black;
   background-position: center;
   background-size: cover;
@@ -1093,11 +1105,11 @@ input:checked + .slider2:before {
 .oneBlog .textSide .name {
   font-weight: 700;
   width: 80%;
-  font-size: 36px;
+  font-size: 27px;
   line-height: 49px;
   /* or 49px */
   color: #1A1A1A;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1114,17 +1126,21 @@ input:checked + .slider2:before {
 
 .oneBlog .textSide .description {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 49px;
   /* or 49px */
   color: #1A1A1A;
-  margin-bottom: 72px;
+  margin-bottom: 30px;
+}
+
+.oneBlog .textSide .description.bthemeT {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
   .oneBlog .textSide .description {
-    font-size: 15px;
-    margin-bottom: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
     line-height: 30px;
   }
 }
@@ -1138,23 +1154,47 @@ input:checked + .slider2:before {
   z-index: 1000;
   pointer-events: none;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #000000;
 }
+
 .pre-loader.close {
-  animation: closeLoader 0.5s 2s linear forwards;
+  -webkit-animation: closeLoader 0.5s 2s linear forwards;
+          animation: closeLoader 0.5s 2s linear forwards;
 }
-@keyframes closeLoader {
+
+@-webkit-keyframes closeLoader {
   from {
-    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
   }
   to {
-    clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
     display: none;
   }
 }
+
+@keyframes closeLoader {
+  from {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+    display: none;
+  }
+}
+
 .pre-loader #wrap {
   position: relative;
   width: 200px;
@@ -1163,19 +1203,32 @@ input:checked + .slider2:before {
   overflow: hidden;
   padding: 1rem;
 }
+
 .pre-loader .svg {
   /* width: 100%;
   
   height: 100%; */
-  animation: translateSvg 0.8s ease forwards;
+  -webkit-animation: translateSvg 0.8s ease forwards;
+          animation: translateSvg 0.8s ease forwards;
   stroke-width: 1;
   color: white;
   fill: transparent;
-  transform: translateX(-150px);
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
 }
+
 /* .pre-loader path{
   fill: white !important;
 } */
+@-webkit-keyframes svgFill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+    stroke-width: 0;
+  }
+}
 @keyframes svgFill {
   from {
     fill: transparent;
@@ -1185,11 +1238,21 @@ input:checked + .slider2:before {
     stroke-width: 0;
   }
 }
-@keyframes translateSvg {
+
+@-webkit-keyframes translateSvg {
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+
+@keyframes translateSvg {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .pre-loader .line {
   z-index: 120;
   width: 100%;
@@ -1197,15 +1260,30 @@ input:checked + .slider2:before {
   margin-top: 10px;
   background-color: white;
   animation: load 1s 2s infinite linear alternate-reverse;
-  transform-origin: left;
-  transform: scaleX(0) translateX(150px);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0) translateX(150px);
+          transform: scaleX(0) translateX(150px);
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: scaleX(0) translateX(-150px);
+            transform: scaleX(0) translateX(-150px);
+  }
+  to {
+    -webkit-transform: scaleX(1) translateX(150px);
+            transform: scaleX(1) translateX(150px);
+  }
 }
 
 @keyframes load {
   from {
-    transform: scaleX(0) translateX(-150px);
+    -webkit-transform: scaleX(0) translateX(-150px);
+            transform: scaleX(0) translateX(-150px);
   }
   to {
-    transform: scaleX(1) translateX(150px);
+    -webkit-transform: scaleX(1) translateX(150px);
+            transform: scaleX(1) translateX(150px);
   }
 }

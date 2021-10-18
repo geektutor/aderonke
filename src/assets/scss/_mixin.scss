@@ -85,13 +85,13 @@ button {
 
 .topic {
   font-weight: bold;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 106.9%;
   /* or 80px */
   color: #0b0b0b;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   @include mq(768px) {
-    font-size: 30px;
+    font-size: 20px;
   }
   &.bthemeT {
     color: #ffffff;

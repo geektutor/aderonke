@@ -5,9 +5,12 @@ body {
   @include webkit;
 }
 .pd-home {
-  padding-top: 116px;
+  padding-top: 50px;
   background-color: white;
   padding-bottom: 50px;
+  @include mq(768px) {
+    padding-top: 88px;
+  }
 
   &.btheme {
     background-color: #000000;
@@ -18,6 +21,9 @@ body {
     max-width: 1140px;
     margin: auto;
     padding-bottom: 67px;
+    @include mq(768px) {
+      padding-bottom: 30px;
+    }
     &.extra{
       @include mq(768px) {
         padding-bottom: 40px;
@@ -31,7 +37,7 @@ body {
       .text {
         h1 {
           font-weight: bold;
-          font-size: 75px;
+          font-size: 65px;
           line-height: 106.9%;
           color: #000000;
           @include mq(650px) {
@@ -61,7 +67,7 @@ body {
 
           text-align: right;
           font-weight: 600;
-          font-size: 18px;
+          font-size: 15px;
           margin-bottom: 17px;
 
           &:hover {
@@ -72,7 +78,7 @@ body {
       }
     }
     .prop {
-      margin-top: 24px;
+      margin-top: 30px;
       ul {
         color: #1a1a1a;
         &.bthemeT {
@@ -81,7 +87,7 @@ body {
         li {
           list-style-type: none;
           font-weight: 700;
-          font-size: 27px;
+          font-size: 18px;
           line-height: 106.9%;
           margin-bottom: 19px;
 
@@ -107,19 +113,19 @@ body {
   }
   .about {
     margin: auto;
-    margin-top: 110px;
+    margin-top: 50px;
     width: 85%;
     max-width: 1140px;
-    padding-bottom: 135px;
+    padding-bottom: 50px;
     @include mq(768px) {
-      padding-bottom: 0px;
+      padding-bottom: 20px;
     }
 
     p.first,div.first
     p.second {
       font-weight: 700;
-      width: 80%;
-      font-size: 24px;
+      width: 95%;
+      font-size: 18px;
       line-height: 49px;
       /* or 49px */
       color: $black;
@@ -127,7 +133,7 @@ body {
         display: none;
       }
       @include mq(768px) {
-        font-size: 15px;
+        font-size: 14px;
         width: 100%;
         line-height: 30px;
       }
@@ -136,11 +142,11 @@ body {
       }
     }
     p.first {
-      margin-bottom: 23px;
+      margin-bottom: 18px;
     }
     .resume {
       width: 200px;
-      margin-top: 57px;
+      margin-top: 27px;
       @include mq(768px) {
         width: 130px;
       }
@@ -148,9 +154,11 @@ body {
   }
   .work {
     width: 100%;
-    padding-top: 81px;
-    padding-bottom: 139px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
     &.extra{
+ 
       @include mq(768px) {
         padding-top: 20px;
       }
@@ -166,9 +174,8 @@ body {
       .heading{
         display: flex;
         justify-content: space-between;
-       
         align-items: center;
-        margin-bottom:69px;
+        margin-bottom:39px;
         @include mq(768px) {
           font-size: 18px;
           margin-bottom: 40px;
@@ -179,7 +186,7 @@ body {
         }
         .see{
           color: $red;
-          font-size: 36px;
+          font-size: 26px;
           @include mq(768px) {
             font-size: 18px;
           
@@ -199,6 +206,7 @@ body {
           margin-bottom: 35px;
           @include mq(768px) {
             width: 100%;
+            // margin-bottom: 60px;
           }
           .imageDiv {
             width: 100%;
@@ -207,16 +215,16 @@ body {
             background-size: cover;
             background-position: center;
       
-            margin-bottom: 15px;
+            margin-bottom: 35px;
             @include mq(768px) {
               height: 170px;
             }
           }
           .title {
             font-weight: 600;
-            font-size: 36px;
+            font-size: 25px;
             margin-bottom: 15px;
-            height: 100px;
+            height: 40px;
             color: $black;
             @include mq(768px) {
               font-size: 20px;
@@ -225,17 +233,17 @@ body {
           }
           .aboutT {
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 39px;
             margin-bottom: 15px;
             @include mq(768px) {
-              font-size: 15px;
+              font-size: 14px;
               line-height: 29px;
             }
           }
           @include mq(768px) {
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 60px;
           }
         }
       }
@@ -243,8 +251,8 @@ body {
   }
   .blog {
     width: 100%;
-    padding-top: 63px;
-    padding-bottom: 78px;
+    padding-top: 20px;
+    padding-bottom: 8px;
     &.extra{
       @include mq(768px) {
         padding-top: 20px;
@@ -260,7 +268,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom:69px;
+        margin-bottom:39px;
         @include mq(768px) {
           font-size: 18px;
           margin-bottom: 40px;
@@ -271,7 +279,7 @@ body {
         }
         .see{
           color: $red;
-          font-size: 36px;
+          font-size: 26px;
           @include mq(768px) {
             font-size: 18px;
           
@@ -314,7 +322,7 @@ body {
     width:100% ;
   }
   .tt {
-    font-size: 30px;
+    font-size: 20px;
     color: $red;
     font-weight: 300;
     @include mq(768px) {
@@ -328,7 +336,7 @@ body {
     }
   }
   img {
-    width: 36px;
+    width: 26px;
     @include mq(768px) {
       width: 25px;
     }
@@ -429,11 +437,11 @@ input:checked + .slider2:before {
   margin-bottom: 66px;
   @include mq(768px) {
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .imgBox{
     width: 48%;
-    height: 350px;
+    height: 288px;
     background-color: black;
     background-position: center;
     background-size: cover;
@@ -452,11 +460,11 @@ input:checked + .slider2:before {
     .name{
       font-weight: 700;
       width: 80%;
-      font-size: 36px;
+      font-size: 27px;
       line-height: 49px;
       /* or 49px */
       color: $black;
-      margin-bottom: 21px;
+      margin-bottom: 18px;
       @include mq(768px) {
         font-size: 20px;
         width: 100%;
@@ -468,17 +476,104 @@ input:checked + .slider2:before {
     }
     .description{
       font-weight: 700;
-      font-size: 24px;
+      font-size: 18px;
       line-height: 49px;
       /* or 49px */
       color: $black;
-      margin-bottom: 72px;
+      margin-bottom: 30px;
+      &.bthemeT {
+        color: #ffffff;
+      }
       @include mq(768px) {
-        font-size: 15px;
-    margin-bottom: 50px;
+        font-size: 14px;
+    margin-bottom: 20px;
         line-height: 30px;
       }
     }
   }
 
+}
+
+
+
+
+/* preloader */
+.pre-loader {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.pre-loader.close {
+  animation: closeLoader 0.5s 2s linear forwards;
+}
+@keyframes closeLoader {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 100% 0);
+    display: none;
+  }
+}
+.pre-loader #wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  overflow: hidden;
+  padding: 1rem;
+}
+.pre-loader .svg {
+  /* width: 100%;
+  
+  height: 100%; */
+  animation: translateSvg 0.8s ease forwards;
+  stroke-width: 1;
+  color: white;
+  fill: transparent;
+  transform: translateX(-150px);
+}
+/* .pre-loader path{
+  fill: white !important;
+} */
+@keyframes svgFill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+    stroke-width: 0;
+  }
+}
+@keyframes translateSvg {
+  to {
+    transform: translateX(0);
+  }
+}
+.pre-loader .line {
+  z-index: 120;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background-color: white;
+  animation: load 1s 2s infinite linear alternate-reverse;
+  transform-origin: left;
+  transform: scaleX(0) translateX(150px);
+}
+
+@keyframes load {
+  from {
+    transform: scaleX(0) translateX(-150px);
+  }
+  to {
+    transform: scaleX(1) translateX(150px);
+  }
 }
