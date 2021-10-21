@@ -645,6 +645,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 768px) {
   .pd-home .about {
     padding-bottom: 20px;
+    width: 95%;
   }
 }
 
@@ -661,7 +662,39 @@ p.second {
 .pd-home .about p.first img, .pd-home .about p.first figure, .pd-home .about div.first
 p.second img, .pd-home .about div.first
 p.second figure {
-  display: none;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .about p.first img, .pd-home .about p.first figure, .pd-home .about div.first
+p.second img, .pd-home .about div.first
+p.second figure {
+    display: none;
+  }
+}
+
+.pd-home .about p.first a, .pd-home .about div.first
+p.second a {
+  text-decoration: underline;
+}
+
+.pd-home .about p.first ul, .pd-home .about p.first ol, .pd-home .about div.first
+p.second ul, .pd-home .about div.first
+p.second ol {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .about p.first ul, .pd-home .about p.first ol, .pd-home .about div.first
+p.second ul, .pd-home .about div.first
+p.second ol {
+    margin-left: 0px;
+  }
+}
+
+.pd-home .about p.first iframe, .pd-home .about div.first
+p.second iframe {
+  width: 100% !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -714,6 +747,12 @@ p.second.bthemeT {
   margin: auto;
   max-width: 1140px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .work .coverWork {
+    width: 95%;
+  }
 }
 
 .pd-home .work .coverWork .heading {
@@ -851,6 +890,12 @@ p.second.bthemeT {
   max-width: 1140px;
   margin: auto;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .pd-home .blog .coverBlog {
+    width: 95%;
+  }
 }
 
 .pd-home .blog .coverBlog .heading {

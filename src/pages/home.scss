@@ -119,6 +119,7 @@ body {
     padding-bottom: 50px;
     @include mq(768px) {
       padding-bottom: 20px;
+      width: 95%;
     }
 
     p.first,div.first
@@ -130,7 +131,22 @@ body {
       /* or 49px */
       color: $black;
       img,figure{
-        display: none;
+       width: 100% !important;
+       @include mq(768px) {
+       display: none;
+      }
+      }
+      a{
+        text-decoration: underline;
+      }
+      ul,ol{
+        margin-left: 20px;
+        @include mq(768px) {
+          margin-left: 0px;
+        }
+      }
+      iframe{
+        width: 100% !important;
       }
       @include mq(768px) {
         font-size: 14px;
@@ -171,6 +187,9 @@ body {
       margin: auto;
       max-width: 1140px;
       margin-bottom: 30px;
+      @include mq(768px) {
+      width: 95%;
+      }
       .heading{
         display: flex;
         justify-content: space-between;
@@ -264,6 +283,10 @@ body {
       max-width: 1140px;
       margin: auto;
       margin-top: 30px;
+      @include mq(768px) {
+        width: 95%;
+      
+      }
       .heading{
         display: flex;
         justify-content: space-between;
