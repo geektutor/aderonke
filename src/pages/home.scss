@@ -24,7 +24,7 @@ body {
     @include mq(768px) {
       padding-bottom: 30px;
     }
-    &.extra{
+    &.extra {
       @include mq(768px) {
         padding-bottom: 40px;
       }
@@ -122,30 +122,36 @@ body {
       width: 95%;
     }
 
-    p.first,div.first
-    p.second {
+    p.first,
+    div.first p.second {
       font-weight: 700;
       width: 95%;
       font-size: 18px;
       line-height: 49px;
       /* or 49px */
       color: $black;
-      img,figure{
-       width: 100% !important;
-       @include mq(768px) {
-       display: none;
+      .twitter-tweet {
+        padding-left: 15px;
+        border-left: 2px solid red;
       }
+      img,
+      figure {
+        width: 100% !important;
+        @include mq(768px) {
+          display: none;
+        }
       }
-      a{
+      a {
         text-decoration: underline;
       }
-      ul,ol{
+      ul,
+      ol {
         margin-left: 20px;
         @include mq(768px) {
           margin-left: 0px;
         }
       }
-      iframe{
+      iframe {
         width: 100% !important;
       }
       @include mq(768px) {
@@ -173,8 +179,7 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
 
-    &.extra{
- 
+    &.extra {
       @include mq(768px) {
         padding-top: 20px;
       }
@@ -188,27 +193,25 @@ body {
       max-width: 1140px;
       margin-bottom: 30px;
       @include mq(768px) {
-      width: 95%;
+        width: 95%;
       }
-      .heading{
+      .heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom:39px;
+        margin-bottom: 39px;
         @include mq(768px) {
           font-size: 18px;
           margin-bottom: 40px;
-        
         }
-        .topic{
+        .topic {
           margin-bottom: 0;
         }
-        .see{
+        .see {
           color: $red;
           font-size: 26px;
           @include mq(768px) {
             font-size: 18px;
-          
           }
         }
       }
@@ -233,7 +236,7 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-      
+
             margin-bottom: 35px;
             @include mq(768px) {
               height: 170px;
@@ -272,51 +275,47 @@ body {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 8px;
-    &.extra{
+    &.extra {
       @include mq(768px) {
         padding-top: 20px;
       }
     }
-   
-    .coverBlog{
+
+    .coverBlog {
       width: 85%;
       max-width: 1140px;
       margin: auto;
       margin-top: 30px;
       @include mq(768px) {
         width: 95%;
-      
       }
-      .heading{
+      .heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom:39px;
+        margin-bottom: 39px;
         @include mq(768px) {
           font-size: 18px;
           margin-bottom: 40px;
-        
         }
-        .topic{
+        .topic {
           margin-bottom: 0;
         }
-        .see{
+        .see {
           color: $red;
           font-size: 26px;
           @include mq(768px) {
             font-size: 18px;
-          
           }
         }
       }
-      .allBlog{
+      .allBlog {
         display: flex;
         flex-direction: column;
         width: 100%;
-       
       }
     }
-   
+
     &.bg {
       background-color: #dedede;
     }
@@ -342,7 +341,7 @@ body {
   padding-bottom: 3px;
   border-bottom: 3px solid $red;
   @include mq(768px) {
-    width:100% ;
+    width: 100%;
   }
   .tt {
     font-size: 20px;
@@ -354,7 +353,7 @@ body {
     &.bthemeT {
       color: #ffffff;
     }
-    &.grey{
+    &.grey {
       color: $black;
     }
   }
@@ -365,7 +364,6 @@ body {
     }
   }
 }
-
 
 .switch {
   position: relative;
@@ -382,18 +380,19 @@ body {
   height: 16px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.switch2 input { 
+.switch2 input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider,.slider2 {
+.slider,
+.slider2 {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -401,13 +400,12 @@ body {
   right: 0;
   bottom: 0;
   border: 1px solid $black;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-
-
-.slider:before,.slider2:before {
+.slider:before,
+.slider2:before {
   position: absolute;
   content: "";
   height: 8px;
@@ -415,8 +413,8 @@ body {
   left: 4px;
   bottom: 4px;
   border: 1px solid $black;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -439,20 +437,20 @@ input:checked + .slider2:before {
   -webkit-transform: translateX(10px);
   -ms-transform: translateX(10px);
   transform: translateX(10px);
- 
 }
 
 /* Rounded sliders */
-.slider.round,.slider2.round {
+.slider.round,
+.slider2.round {
   border-radius: 34px;
 }
 
-.slider.round:before,.slider2.round:before {
+.slider.round:before,
+.slider2.round:before {
   border-radius: 50%;
 }
 
-
-.oneBlog{
+.oneBlog {
   display: flex;
   align-items: center;
   width: 100%;
@@ -462,7 +460,7 @@ input:checked + .slider2:before {
     flex-direction: column;
     margin-bottom: 60px;
   }
-  .imgBox{
+  .imgBox {
     width: 48%;
     height: 288px;
     background-color: black;
@@ -475,12 +473,12 @@ input:checked + .slider2:before {
       height: 250px;
     }
   }
-  .textSide{
+  .textSide {
     width: 48%;
     @include mq(768px) {
       width: 100%;
     }
-    .name{
+    .name {
       font-weight: 700;
       width: 80%;
       font-size: 27px;
@@ -497,7 +495,7 @@ input:checked + .slider2:before {
         color: #ffffff;
       }
     }
-    .description{
+    .description {
       font-weight: 700;
       font-size: 18px;
       line-height: 49px;
@@ -509,16 +507,12 @@ input:checked + .slider2:before {
       }
       @include mq(768px) {
         font-size: 14px;
-    margin-bottom: 20px;
+        margin-bottom: 20px;
         line-height: 30px;
       }
     }
   }
-
 }
-
-
-
 
 /* preloader */
 .pre-loader {

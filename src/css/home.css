@@ -649,8 +649,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.pd-home .about p.first, .pd-home .about div.first
-p.second {
+.pd-home .about p.first,
+.pd-home .about div.first p.second {
   font-weight: 700;
   width: 95%;
   font-size: 18px;
@@ -659,55 +659,65 @@ p.second {
   color: #1A1A1A;
 }
 
-.pd-home .about p.first img, .pd-home .about p.first figure, .pd-home .about div.first
-p.second img, .pd-home .about div.first
-p.second figure {
+.pd-home .about p.first .twitter-tweet,
+.pd-home .about div.first p.second .twitter-tweet {
+  padding-left: 15px;
+  border-left: 2px solid red;
+}
+
+.pd-home .about p.first img,
+.pd-home .about p.first figure,
+.pd-home .about div.first p.second img,
+.pd-home .about div.first p.second figure {
   width: 100% !important;
 }
 
 @media screen and (max-width: 768px) {
-  .pd-home .about p.first img, .pd-home .about p.first figure, .pd-home .about div.first
-p.second img, .pd-home .about div.first
-p.second figure {
+  .pd-home .about p.first img,
+  .pd-home .about p.first figure,
+  .pd-home .about div.first p.second img,
+  .pd-home .about div.first p.second figure {
     display: none;
   }
 }
 
-.pd-home .about p.first a, .pd-home .about div.first
-p.second a {
+.pd-home .about p.first a,
+.pd-home .about div.first p.second a {
   text-decoration: underline;
 }
 
-.pd-home .about p.first ul, .pd-home .about p.first ol, .pd-home .about div.first
-p.second ul, .pd-home .about div.first
-p.second ol {
+.pd-home .about p.first ul,
+.pd-home .about p.first ol,
+.pd-home .about div.first p.second ul,
+.pd-home .about div.first p.second ol {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .pd-home .about p.first ul, .pd-home .about p.first ol, .pd-home .about div.first
-p.second ul, .pd-home .about div.first
-p.second ol {
+  .pd-home .about p.first ul,
+  .pd-home .about p.first ol,
+  .pd-home .about div.first p.second ul,
+  .pd-home .about div.first p.second ol {
     margin-left: 0px;
   }
 }
 
-.pd-home .about p.first iframe, .pd-home .about div.first
-p.second iframe {
+.pd-home .about p.first iframe,
+.pd-home .about div.first p.second iframe {
   width: 100% !important;
 }
 
 @media screen and (max-width: 768px) {
-  .pd-home .about p.first, .pd-home .about div.first
-p.second {
+  .pd-home .about p.first,
+  .pd-home .about div.first p.second {
     font-size: 14px;
     width: 100%;
     line-height: 30px;
   }
 }
 
-.pd-home .about p.first.bthemeT, .pd-home .about div.first
-p.second.bthemeT {
+.pd-home .about p.first.bthemeT,
+.pd-home .about div.first p.second.bthemeT {
   color: #ffffff;
 }
 
@@ -1043,7 +1053,8 @@ p.second.bthemeT {
   height: 0;
 }
 
-.slider, .slider2 {
+.slider,
+.slider2 {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1051,11 +1062,12 @@ p.second.bthemeT {
   right: 0;
   bottom: 0;
   border: 1px solid #1A1A1A;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.slider:before, .slider2:before {
+.slider:before,
+.slider2:before {
   position: absolute;
   content: "";
   height: 8px;
@@ -1063,8 +1075,8 @@ p.second.bthemeT {
   left: 4px;
   bottom: 4px;
   border: 1px solid #1A1A1A;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -1088,11 +1100,13 @@ input:checked + .slider2:before {
 }
 
 /* Rounded sliders */
-.slider.round, .slider2.round {
+.slider.round,
+.slider2.round {
   border-radius: 34px;
 }
 
-.slider.round:before, .slider2.round:before {
+.slider.round:before,
+.slider2.round:before {
   border-radius: 50%;
 }
 
